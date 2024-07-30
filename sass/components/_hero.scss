@@ -1,0 +1,53 @@
+.hero {
+  //   width: 900px;
+  height: 900px;
+  & .container {
+    @extend %container;
+    position: relative;
+
+    background: url('/images/hero_auto.jpg') no-repeat;
+    background-size: 1050px 700px;
+    background-position: 433px 108px;
+    // background-size: cover;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Фоновий колір з прозорістю */
+    background-blend-mode: overlay;
+  }
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  margin: 0;
+  padding-top: 185px;
+  padding-left: 80px;
+
+  font-family: 'Noto Serif Display';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 80px */
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+
+  user-select: none;
+  pointer-events: none;
+
+  color: #fff;
+
+  & .hero-description {
+    color: #b8875c;
+  }
+}
+
+.hero-smoke {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/smoke.png') no-repeat center center;
+  background-size: cover;
+}

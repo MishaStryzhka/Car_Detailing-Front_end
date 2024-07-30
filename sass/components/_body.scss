@@ -1,0 +1,17 @@
+body {
+  background-color: $primary-black-color;
+  color: $primary-white-color;
+
+  margin: 0;
+  padding: 0;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.menu-open {
+  @media screen and (max-width: $max-mobile) {
+    overflow: hidden;
+  }
+}
