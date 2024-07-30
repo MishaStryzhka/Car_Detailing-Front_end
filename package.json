@@ -19,6 +19,7 @@
   "name": "car_detailing-front_end",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://MishaStryzhka.github.io/Car_Detailing-Front_end/",
   "dependencies": {
     "array-union": "^1.0.2",
     "array-uniq": "^1.0.3",
