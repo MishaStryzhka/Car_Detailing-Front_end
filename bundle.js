@@ -232,7 +232,7 @@ eval("module.exports = __webpack_require__.p + \"d33aecce785b91c7f50c.png\";\n\n
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "/Car_Detailing-Front_end/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
