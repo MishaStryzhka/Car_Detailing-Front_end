@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+    publicPath: '/Car_Detailing-Front_end/',
   },
   module: {
     rules: [
@@ -35,6 +35,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      publicPath: '/Car_Detailing-Front_end/',
     }),
   ],
   devServer: {
