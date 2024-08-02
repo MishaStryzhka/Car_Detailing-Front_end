@@ -36,6 +36,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       publicPath: '/Car_Detailing-Front_end/',
+      favicon: './src/images/favicon.ico', // Шлях до вашої фавіконки
     }),
   ],
   devServer: {
