@@ -1,0 +1,95 @@
+.about-us {
+  margin-top: 120px;
+  & .container {
+    @extend %container;
+  }
+}
+
+.about-us_header {
+  @extend %flex-center;
+  gap: 56px;
+}
+
+.image_about-us {
+  width: 400px;
+  height: 400px;
+
+  background-image: url('../images/image_about-us.png');
+  background-size: 400px;
+}
+
+.about-us_description {
+  width: 824px;
+}
+
+.about-us_title {
+  @extend %section-title;
+}
+
+.about-us_text {
+  color: #feffff;
+  margin: 0;
+  margin-top: 40px;
+
+  /* Main text */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.16px;
+
+  text-align: justify;
+}
+
+.features {
+  @extend %list;
+  margin-top: 56px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.features-item {
+  width: 413px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & .features-icon {
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+  }
+
+  & .icon-palette {
+    background-image: url('../images/icons/r-palette-art.svg');
+  }
+
+  & .icon-wrench {
+    background-image: url('../images/icons/r-wrench.svg');
+  }
+
+  & .icon-paint_brush {
+    background-image: url('../images/icons/r-paint_brush.svg');
+  }
+}
+
+.features-titel {
+  font-family: 'Noto Serif Display';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 163.636% */
+  letter-spacing: 1.54px;
+}
+
+.features-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.16px;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <base href="/Car_Detailing-Front_end/" /> -->
     <title>VIP CAR Detailing</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,9 +26,6 @@
               <a href="#about-us" class="site-nav__link">Про нас</a>
             </li>
             <li class="site-nav__item">
-              <a href="#about-us" class="site-nav__link">Про нас</a>
-            </li>
-            <li class="site-nav__item">
               <a href="#services" class="site-nav__link">Послуги</a>
             </li>
             <li class="site-nav__item">
@@ -45,17 +43,14 @@
           <a
             class="contact-link ins"
             href="https://www.instagram.com/ad_autodetailing_praha?igsh=MTVtYngxN2ZkcG1qZQ=="
+            target="_blank"
           >
-            <svg>
-              <use href="/images/symbol-defs.svg#icon-ins"></use>
-            </svg>
           </a>
           <a
             class="contact-link tiktok"
             href="https://www.tiktok.com/@ad_autodetailing?_t=8nnBfM9Ln1S&_r=1"
-            ><svg>
-              <use href="/images/symbol-defs.svg#icon-tiktok"></use>
-            </svg>
+            target="_blank"
+          >
           </a>
           <button class="contact-btn">Отримати консультацію</button>
         </div>
@@ -71,27 +66,49 @@
       </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about-us" class="about-us">
       <div class="container">
-        <h2>Про нас</h2>
-        <p>VIP CAR Detailing надає своїм клієнтам послуги догляду за авто в Києві...</p>
-        <div class="features">
-          <div class="feature">
-            <img src="img/feature1.jpg" alt="Аквапрінт" />
-            <h3>Аквапрінт</h3>
-            <p>Інноваційна технологія...</p>
-          </div>
-          <div class="feature">
-            <img src="img/feature2.jpg" alt="Реставрація салону" />
-            <h3>Реставрація салону</h3>
-            <p>Дана послуга дозволить...</p>
-          </div>
-          <div class="feature">
-            <img src="img/feature3.jpg" alt="Хімчистка" />
-            <h3>Хімчистка</h3>
-            <p>Автомобільна хімчистка...</p>
+        <div class="about-us_header">
+          <div class="image_about-us"></div>
+          <div class="about-us_description">
+            <h2 class="about-us_title">Про нас</h2>
+            <p class="about-us_text">
+              VIP CAR Detailing надає своїм клієнтам послуги догляду за авто в Празі. Вони завжди
+              чинно відпрацьовують усі стандарти якості та задають нові тренди у зухвалому світі
+              автолюбителів. Але ми змінюємося, тому що більше не хочемо приховувати своїх справжніх
+              намірів.
+            </p>
           </div>
         </div>
+        <ul class="features">
+          <li class="features-item">
+            <div class="features-icon icon-palette"></div>
+            <h3 class="features-titel">Аквапрінт</h3>
+            <p class="features-text">
+              Інноваційна технологія нанесення різних текстур імітації дерева, мармуру, карбону,
+              наклейок тощо…. Використовується для створення індивідуального стилю у салоні Вашого
+              авто. Ця технологія застосовується на заводах при виготовленні інтер'єрів салону
+              автомобіля.
+            </p>
+          </li>
+          <li class="features-item">
+            <div class="features-icon icon-wrench"></div>
+            <h3 class="features-titel">Реставрація салону</h3>
+            <p class="features-text">
+              Дана послуга дає друге життя Вашому шкіряному салону без дорогої перешивки, але при
+              цьому залишається стійкою до стирання і має тривалий строк експлуатації.
+            </p>
+          </li>
+          <li class="features-item">
+            <div class="features-icon icon-paint_brush"></div>
+            <h3 class="features-titel">Хімчистка</h3>
+            <p class="features-text">
+              Автомобіль потребує зовнішньої мийки для надання чистоти так само і як догляду за ним
+              усередині. Правильний догляд за салоном автомобіля надасть йому естетичного вигляду і
+              продовжить життя оббивці.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 

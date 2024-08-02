@@ -9,12 +9,20 @@
   height: 40px;
 
   padding: 8px;
-  & svg {
-    width: 24px;
-    height: 24px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+
+  &.ins {
+    background-image: url('../images/icons/instagram.svg');
   }
 
-  // transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &.tiktok {
+    background-image: url('../images/icons/tiktok.svg');
+  }
+
+  @extend %transition-default;
   &:hover {
     scale: 1.15;
   }
