@@ -1,0 +1,80 @@
+.advantages {
+  margin-top: 120px;
+
+  & .container {
+    @extend %container;
+  }
+}
+
+.advantages-titel {
+  margin: 0;
+  text-align: center;
+
+  font-family: 'Noto Serif Display';
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 127.273% */
+  letter-spacing: 2.2px;
+
+  text-transform: uppercase;
+}
+
+.advantage-list {
+  @extend %list;
+
+  margin-top: 56px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 80px;
+}
+
+.advantages-item {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-icon {
+  width: 60px;
+  height: 60px;
+  background-size: 60px;
+
+  &.icon-icon73 {
+    background-image: url('/src/images/icons/advantages-icon73.svg');
+  }
+  &.icon-icon74 {
+    background-image: url('/src/images/icons/advantages-icon74.svg');
+  }
+  &.icon-icon72 {
+    background-image: url('/src/images/icons/advantages-icon72.svg');
+  }
+  &.icon-icon71 {
+    background-image: url('/src/images/icons/advantages-icon71.svg');
+  }
+}
+
+.advantages-item_titel {
+  margin: 0;
+
+  font-family: 'Noto Serif Display';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 163.636% */
+  letter-spacing: 1.54px;
+  text-transform: uppercase;
+}
+
+.advantages-item_text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.16px;
+
+  width: 516px;
+}
