@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -36,7 +37,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       publicPath: '/Car_Detailing-Front_end/',
-      favicon: './src/images/favicon.ico', // Шлях до вашої фавіконки
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'src/images/img',
+          to: 'images/img',
+        },
+      ],
     }),
   ],
   devServer: {

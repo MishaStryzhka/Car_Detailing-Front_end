@@ -6,17 +6,8 @@
   @extend %container;
 }
 
-.services-titel {
-  margin: 0;
-
-  font-family: 'Noto Serif Display';
-  font-size: 44px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 56px; /* 127.273% */
-  letter-spacing: 2.2px;
-
-  text-transform: uppercase;
+.services-title {
+  @extend %section-title;
 }
 
 .service-list {
@@ -54,24 +45,24 @@
   width: 413px;
   height: 300px;
 
-  &.services-img1 {
-    background-image: url('/src/images/services-img/services-img1.png');
-  }
-  &.services-img2 {
-    background-image: url('/src/images/services-img/services-img2.png');
-  }
-  &.services-img3 {
-    background-image: url('/src/images/services-img/services-img3.png');
-  }
-  &.services-img4 {
-    background-image: url('/src/images/services-img/services-img4.png');
-  }
-  &.services-img5 {
-    background-image: url('/src/images/services-img/services-img5.png');
-  }
-  &.services-img6 {
-    background-image: url('/src/images/services-img/services-img6.png');
-  }
+  // &.services-img1 {
+  //   background-image: url('/src/images/services-img/services-img1.png');
+  // }
+  // &.services-img2 {
+  //   background-image: url('/src/images/services-img/services-img2.png');
+  // }
+  // &.services-img3 {
+  //   background-image: url('/src/images/services-img/services-img3.png');
+  // }
+  // &.services-img4 {
+  //   background-image: url('/src/images/services-img/services-img4.png');
+  // }
+  // &.services-img5 {
+  //   background-image: url('/src/images/services-img/services-img5.png');
+  // }
+  // &.services-img6 {
+  //   background-image: url('/src/images/services-img/services-img6.png');
+  // }
 }
 
 .services-description {
