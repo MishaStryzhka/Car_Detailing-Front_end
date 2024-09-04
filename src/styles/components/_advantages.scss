@@ -42,17 +42,23 @@
   height: 60px;
   background-size: 60px;
 
-  &.icon-icon73 {
-    background-image: url('../images/icons/advantages-icon73.svg');
+  &.icon-professionalism {
+    background-image: url('../images/icons/professionalism.svg');
   }
-  &.icon-icon74 {
-    background-image: url('../images/icons/advantages-icon74.svg');
+  &.icon-complex {
+    background-image: url('../images/icons/complex.svg');
   }
-  &.icon-icon72 {
-    background-image: url('../images/icons/advantages-icon72.svg');
+  &.icon-material {
+    background-image: url('../images/icons/material.svg');
   }
-  &.icon-icon71 {
-    background-image: url('../images/icons/advantages-icon71.svg');
+  &.icon-individual {
+    background-image: url('../images/icons/individual.svg');
+  }
+  &.icon-service {
+    background-image: url('../images/icons/service.svg');
+  }
+  &.icon-garantee {
+    background-image: url('../images/icons/garantee.svg');
   }
 }
 
@@ -65,7 +71,7 @@
   font-weight: 600;
   line-height: 36px; /* 163.636% */
   letter-spacing: 1.54px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .advantages-item_text {

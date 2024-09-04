@@ -7,7 +7,8 @@
 
 .about-us_header {
   @extend %flex-center;
-  gap: 56px;
+
+  margin-top: 56px;
 }
 
 .image_about-us {
@@ -19,11 +20,15 @@
 }
 
 .about-us_description {
-  width: 824px;
+  width: 1064px;
+
+  text-align: center;
 }
 
 .about-us_title {
   @extend %section-title;
+
+  text-transform: uppercase;
 }
 
 .about-us_text {
@@ -39,12 +44,11 @@
   line-height: 28px; /* 175% */
   letter-spacing: 0.16px;
 
-  text-align: justify;
+  text-align: center;
 }
 
 .features {
   @extend %list;
-  margin-top: 56px;
 
   display: flex;
   justify-content: space-between;
@@ -63,16 +67,16 @@
     background-size: 60px;
   }
 
-  & .icon-palette {
-    background-image: url('../images/icons/r-palette-art.svg');
+  & .icon-polish {
+    background-image: url('../images/icons/polish.svg');
   }
 
-  & .icon-wrench {
-    background-image: url('../images/icons/r-wrench.svg');
+  & .icon-ceramic {
+    background-image: url('../images/icons/ceramic.svg');
   }
 
-  & .icon-paint_brush {
-    background-image: url('../images/icons/r-paint_brush.svg');
+  & .icon-colors {
+    background-image: url('../images/icons/colors.svg');
   }
 }
 
@@ -92,4 +96,6 @@
   font-weight: 300;
   line-height: 28px; /* 175% */
   letter-spacing: 0.16px;
+
+  text-align: center;
 }
