@@ -361,12 +361,14 @@
     <section id="contact" class="contact">
       <div class="container">
         <h2>Дізнайтесь вартість детайлінгу для вашого авто</h2>
-        <form>
-        <form id="contactForm" netlify>
+        <form id="contactForm" netlify data-netlify-recaptcha="true" data-netlify="true">
           <input type="text" name="name" placeholder="Ваше ім'я" />
           <input type="tel" name="phone" placeholder="Ваш телефон" />
           <input type="email" name="email" placeholder="Ваш email" />
           <input type="text" name="message" placeholder="..." />
+
+          <div data-netlify-recaptcha="true"></div>
+
           <button type="submit">Отримати консультацію</button>
         </form>
       </div>
