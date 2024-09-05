@@ -368,11 +368,12 @@
               детайлінгу для вашого авто
             </h2>
             <p class="contact-text">Ми зв’яжемось із вами найближчим часом:</p>
-            <form class="contact-form">
+            <form class="contact-form" netlify data-netlify-recaptcha="true" data-netlify="true">
               <input type="text" name="name" placeholder="Ім'я" />
               <input type="tel" name="phone" placeholder="Номер телефону" />
               <input type="email" name="email" placeholder="Email" />
               <textarea name="text" placeholder="Ваше повідомлення"></textarea>
+              <div data-netlify-recaptcha="true"></div>
               <button type="submit" class="form-btn">Отримати консультацію</button>
             </form>
           </div>
