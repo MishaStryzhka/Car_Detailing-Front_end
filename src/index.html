@@ -359,18 +359,25 @@
     </section>
 
     <section id="contact" class="contact">
-      <div class="container">
-        <h2>Дізнайтесь вартість детайлінгу для вашого авто</h2>
-        <form id="contactForm" netlify data-netlify-recaptcha="true" data-netlify="true">
-          <input type="text" name="name" placeholder="Ваше ім'я" />
-          <input type="tel" name="phone" placeholder="Ваш телефон" />
-          <input type="email" name="email" placeholder="Ваш email" />
-          <input type="text" name="message" placeholder="..." />
-
-          <div data-netlify-recaptcha="true"></div>
-
-          <button type="submit">Отримати консультацію</button>
-        </form>
+      <div class="contact-container">
+        <div class="contact-first-wrap"></div>
+        <div class="contact-second-wrap">
+          <div class="contact-wrap">
+            <h2 class="contact-title">
+              Дізнайтесь вартість<br />
+              детайлінгу для вашого авто
+            </h2>
+            <p class="contact-text">Ми зв’яжемось із вами найближчим часом:</p>
+            <form class="contact-form" netlify data-netlify-recaptcha="true" data-netlify="true">
+              <input type="text" name="name" placeholder="Ім'я" />
+              <input type="tel" name="phone" placeholder="Номер телефону" />
+              <input type="email" name="email" placeholder="Email" />
+              <textarea name="text" placeholder="Ваше повідомлення"></textarea>
+              <div data-netlify-recaptcha="true"></div>
+              <button type="submit" class="form-btn">Отримати консультацію</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 

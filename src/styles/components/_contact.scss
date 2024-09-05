@@ -1,0 +1,112 @@
+.contact {
+  padding-top: 120px;
+  padding-bottom: 180px;
+
+  & .contact-container {
+    @extend %container;
+    display: flex;
+    gap: 12px;
+  }
+}
+.contact-first-wrap {
+  display: block;
+  width: 364px;
+  background: url(../images/car-form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-second-wrap {
+  width: 1064px;
+  display: block;
+  background: url(../images/photo-bg-form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-wrap {
+  max-width: 522px;
+  padding-top: 20px;
+  padding-bottom: 58px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-title {
+  @extend %section-title;
+  line-height: 36px;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contact-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0.16px;
+  opacity: 0.5;
+
+  margin-bottom: 32px;
+  text-align: center;
+
+  color: $secondary-white-color;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & input,
+  & textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+
+    background: transparent;
+    width: 100%;
+    padding: 8px 16px;
+    color: rgba(255, 255, 255);
+
+    outline: none;
+    border: 0.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    & ::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.form-btn {
+  margin-top: 40px;
+  background-color: transparent;
+
+  display: inline-flex;
+  height: 60px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  border-radius: 3px;
+  border: 1px solid #b8875c;
+
+  color: #d9d9d9;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: var(--sds-typography-body-size-medium);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+
+  @extend %transition-default;
+
+  &:hover {
+    background-color: #b8875c;
+    scale: 1.01;
+    @extend %transition-default;
+  }
+}
