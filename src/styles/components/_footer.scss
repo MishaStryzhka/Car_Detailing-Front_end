@@ -1,0 +1,114 @@
+.footer {
+  padding: 66px 80px;
+  background: url(../images/footer-photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & .container {
+    @extend %container;
+
+    display: flex;
+    gap: 140px;
+  }
+}
+
+.footer-right,
+.footer-left {
+  display: flex;
+  gap: 140px;
+}
+
+.footer-right-second {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  @extend %link;
+  margin: 0;
+
+  color: $text-neutral-on-neutral-color;
+}
+
+.title-menu {
+  padding: 8px;
+}
+
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  @extend %link;
+  margin: 0;
+
+  color: $text-neutral-on-neutral-color;
+}
+
+.footer-list {
+  @extend %list;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.footer-item {
+  display: flex;
+  gap: 8px;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    & a {
+      color: $primary-site-color;
+    }
+  }
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+
+  &.icon-phone {
+    background: url(../images/icons/phone.svg);
+  }
+  &.location-pin {
+    background: url(../images/icons/location-pin.svg);
+  }
+  &.icon-email {
+    background: url(../images/icons/email.svg);
+  }
+  &.calendar-clock {
+    background: url(../images/icons/calendar-clock.svg);
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrap-link {
+  display: flex;
+  gap: 16px;
+}
+
+.wrap-text {
+  padding: 8px;
+  border-bottom: 1px solid $border-color;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    & a {
+      color: $primary-site-color;
+    }
+  }
+}
