@@ -15,9 +15,11 @@
 
   margin-top: 56px;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .services-item {
@@ -40,7 +42,13 @@
     scale: 1.01;
   }
 }
-
+.wrap-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 0;
+}
 .services-description {
   margin: 11px 16px 0;
 }
