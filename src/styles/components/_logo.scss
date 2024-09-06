@@ -26,19 +26,23 @@
   }
 }
 
-.logo--header {
-  //   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
-  //     margin-right: 88px;
-  //   }
+// .logo--header {
+//   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
+//     margin-right: 88px;
+//   }
 
-  //   @media screen and (min-width: $desktop) {
-  //     margin-right: 93px;
-  //   }
-}
+//   @media screen and (min-width: $desktop) {
+//     margin-right: 93px;
+//   }
+// }
 
 .logo--footer {
-  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url('../images/logo.png') no-repeat;
+  background-size: 100px 100px;
 
+  display: inline-block;
   margin-bottom: 20px;
 
   color: $primary-white-color;
