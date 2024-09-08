@@ -1,5 +1,7 @@
 .footer {
-  padding: 66px 80px;
+  padding: 66px 0;
+  width: 1440px;
+  height: 464px;
   background: url(../images/footer-photo.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,14 +10,15 @@
     @extend %container;
 
     display: flex;
-    gap: 140px;
+    gap: 150px;
+    justify-content: space-between;
   }
 }
 
 .footer-right,
 .footer-left {
   display: flex;
-  gap: 140px;
+  gap: 154px;
 }
 
 .footer-right-second {
