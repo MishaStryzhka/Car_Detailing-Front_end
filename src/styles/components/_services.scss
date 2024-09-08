@@ -136,7 +136,10 @@
   @extend %transition-default;
 
   &:hover {
-    background-color: #b8875c;
+    background-color: rgba(217, 217, 217, 0.2);
     scale: 1.01;
+  }
+  &:active {
+    background-color: #b8875c;
   }
 }
