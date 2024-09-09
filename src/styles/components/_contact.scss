@@ -2,21 +2,19 @@
   padding-top: 120px;
   padding-bottom: 180px;
 
-  & .contact-container {
-    @extend %container;
+  & .contact-main-wrap {
     display: flex;
-    gap: 12px;
   }
 }
 .contact-first-wrap {
   display: block;
-  width: 364px;
+  width: 400px;
   background: url(../images/car-form.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .contact-second-wrap {
-  width: 1064px;
+  width: 1020px;
   display: block;
   background: url(../images/photo-bg-form.png);
   background-repeat: no-repeat;
@@ -92,7 +90,7 @@
   border-radius: 3px;
   border: 1px solid #b8875c;
 
-  color: #d9d9d9;
+  color: $border-color;
 
   font-family: 'Montserrat', sans-serif;
   font-size: var(--sds-typography-body-size-medium);
@@ -105,8 +103,10 @@
   @extend %transition-default;
 
   &:hover {
-    background-color: #b8875c;
+    background-color: rgba(217, 217, 217, 0.2);
     scale: 1.01;
-    @extend %transition-default;
+  }
+  &:active {
+    background-color: #b8875c;
   }
 }

@@ -1,0 +1,74 @@
+.section-hand-wash {
+  height: 808px;
+  // width: 1440px;
+  padding: 116px 80px;
+  margin: 0 auto;
+  background: url(../images/bg-hand-wash-car.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+
+.hand-wash-link-back {
+  display: flex;
+  padding: 8px;
+  gap: 12px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+
+  color: $border-color;
+  text-decoration: none;
+}
+
+.icon-btn-next {
+  background: url(../images/icons/arrow.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.hand-wash-wrap {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hand-wash-wrap-text {
+  max-width: 630px;
+}
+
+.hand-wash-title {
+  font-family: 'Noto Serif Display';
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin-bottom: 40px;
+
+  color: $secondary-white-color;
+}
+
+.hand-wash-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 16px;
+
+  color: $secondary-white-color;
+}
+
+.hand-wash-picture {
+  width: 630px;
+  height: 400px;
+  background: url(../images/hand-wash-car.png), no-repeat;
+
+  box-shadow: 18px 18px 80px 6px rgba(184, 135, 92, 0.5);
+}

@@ -38,6 +38,10 @@ module.exports = {
       template: './src/index.html',
       publicPath: '/Car_Detailing-Front_end/',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'hand-wash',
+      template: './src/hand-wash.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
