@@ -39,7 +39,7 @@ module.exports = {
       publicPath: '/Car_Detailing-Front_end/',
     }),
     new HtmlWebpackPlugin({
-      filename: 'hand-wash',
+      filename: 'hand-wash.html',
       template: './src/hand-wash.html',
     }),
     new CopyWebpackPlugin({
