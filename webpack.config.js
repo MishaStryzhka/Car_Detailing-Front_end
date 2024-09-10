@@ -42,6 +42,14 @@ module.exports = {
       filename: 'hand-wash.html',
       template: './src/hand-wash.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'dry-cleaning.html',
+      template: './src/dry-cleaning.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'hard-wax.html',
+      template: './src/hard-wax.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
