@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIP CAR Detailing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="./" class="logo"></a>
+        <nav>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./#about-us" class="site-nav__link">O nás</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./#services" class="site-nav__link">Služby</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./#examples-of-work" class="site-nav__link">Příklady prací</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./#reviews" class="site-nav__link">Recenze</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./#contacts" class="site-nav__link">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact-box">
+          <a
+            class="contact-link ins"
+            href="https://www.instagram.com/vip.car_detailing/"
+            target="_blank"
+          >
+          </a>
+          <a
+            class="contact-link tiktok"
+            href="https://www.tiktok.com/@vip_autodetailing"
+            target="_blank"
+          >
+          </a>
+          <a href="#contact" class="contact-btn">Získat konzultaci</a>
+        </div>
+      </div>
+    </header>
+    <section class="hand-wash">
+      <div class="hand-wash-container">
+        <a class="hand-wash-link-back" href="./#services">
+          <div class="icon-btn-next"></div>
+          Zpět na všechny služby</a
+        >
+        <div class="hand-wash-wrap">
+          <div class="hand-wash-wrap-text">
+            <h2 class="hand-wash-title">Ruční mytí</h2>
+            <p class="hand-wash-description">
+              Ruční mytí ve VIP Car Detailing není jen čištění, je to umění!
+            </p>
+            <p class="hand-wash-description">
+              Naši odborníci pečlivě vyčistí každý centimetr vašeho vozu a používají pouze prémiové
+              čisticí prostředky a jemné houbičky, které nepoškodí lak.
+            </p>
+            <p class="hand-wash-description">
+              Dbáme na každý detail, od karoserie po interiér. Po našem mytí se váš vůz bude
+              skutečně lesknout čistotou a zářivostí!
+            </p>
+          </div>
+          <div class="hand-wash-picture"></div>
+        </div>
+      </div>
+    </section>
+    <section class="work-examples">
+      <div class="container">
+        <h2 class="work-examples-title">PŘÍKLADY PRACÍ</h2>
+        <ul class="work-examples-list">
+          <li class="work-examples-item">
+            <img src="../images/img/examples/hand-wash-example-1.png" alt="Example 1" />
+          </li>
+          <li class="work-examples-item">
+            <img src="../images/img/examples/hand-wash-example-2.png" alt="Example 2" />
+          </li>
+          <li class="work-examples-item">
+            <img src="../images/img/examples/hand-wash-example-3.png" alt="Example 3" />
+          </li>
+        </ul>
+        <a class="link-wrap" href="./#services">
+          <button class="btn-back-all-services" type="button">Zpět na všechny služby</button>
+        </a>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <div class="contact-first-wrap"></div>
+        <div class="contact-second-wrap">
+          <div class="contact-wrap">
+            <h2 class="contact-title">
+              Zjistěte cenu<br />
+              detailingu pro váš vůz
+            </h2>
+            <p class="contact-text">Brzy se s vámi spojíme:</p>
+            <form
+              id="contactForm"
+              class="contact-form"
+              netlify
+              data-netlify-recaptcha="true"
+              data-netlify="true"
+            >
+              <input type="text" name="name" placeholder="Jméno" />
+              <input type="tel" name="phone" placeholder="Telefonní číslo" />
+              <input type="email" name="email" placeholder="Email" />
+              <textarea name="text" placeholder="Vaše zpráva"></textarea>
+              <div data-netlify-recaptcha="true" class="box-recaptcha"></div>
+              <button type="submit" class="form-btn">Získat konzultaci</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div id="contacts" class="footer-left">
+          <div class="fotter-left-first">
+            <a class="logo logo--footer" href="./index.html"></a>
+            <p class="footer-text">Kompletní detailingové studio</p>
+          </div>
+          <div class="fotter-left-second">
+            <h4 class="footer-title">Kontakt</h4>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <svg class="footer-icon location-pin"></svg>
+                <a class="footer-text" href="" target="_blank" rel="noopener noreferrer"
+                  >Adresa:...</a
+                >
+              </li>
+              <li class="footer-item">
+                <svg class="footer-icon icon-phone"></svg>
+                <a class="footer-text" href="tel:+380663122112">+380 (66) 312-21-12</a>
+              </li>
+              <li class="footer-item">
+                <svg class="footer-icon icon-email"></svg>
+                <a class="footer-text" href="mailto:example@gmail.com" target="_blank"
+                  >example@gmail.com</a
+                >
+              </li>
+              <li class="footer-item footer-text">
+                <svg class="footer-icon calendar-clock"></svg>
+                Pracovní doba: <br />
+                Pondělí-Sobota <br />
+                9:00-18:00
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-first">
+            <h4 class="footer-title title-menu">Menu</h4>
+            <nav>
+              <ul class="footer-list">
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#about-us">O nás</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#services">Služby</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#examples-of-work">Příklady prací</a>
+                </li>
+                <li class="site-nav__item">
+                  <a class="site-nav__link" href="#reviews">Recenze</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-right-second">
+            <div class="wrap">
+              <p class="footer-title">Sledujte nás</p>
+              <div class="wrap-link">
+                <a
+                  class="contact-link ins"
+                  href="https://www.instagram.com/vip.car_detailing/"
+                  target="_blank"
+                >
+                </a>
+                <a
+                  class="contact-link tiktok"
+                  href="https://www.tiktok.com/@vip_autodetailing"
+                  target="_blank"
+                >
+                </a>
+              </div>
+            </div>
+            <div class="wrap-text">
+              <a class="footer-title" href="" target="_blank">Zásady ochrany osobních údajů</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../bundle.js"></script>
+  </body>
+</html>

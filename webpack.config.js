@@ -34,14 +34,43 @@ module.exports = {
     extensions: ['.js', '.scss'],
   },
   plugins: [
+    //============ ua ============
     new HtmlWebpackPlugin({
-      template: './src/index.html',
-      publicPath: '/Car_Detailing-Front_end/',
+      template: './src/ua/index.html',
+      filename: 'ua/index.html',
+      publicPath: '/ua/',
     }),
     new HtmlWebpackPlugin({
+      template: './src/ua/hand-wash.html',
+      filename: 'ua/hand-wash.html',
+      publicPath: '/ua/',
+    }),
+
+    //============ cs ============
+    new HtmlWebpackPlugin({
+      template: './src/cs/index.html',
+      filename: 'index.html',
+      publicPath: '/cs/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/cs/hand-wash.html',
       filename: 'hand-wash.html',
-      template: './src/hand-wash.html',
+      publicPath: '/cs/',
     }),
+
+    //============ en ============
+    new HtmlWebpackPlugin({
+      template: './src/en/index.html',
+      filename: 'en/index.html',
+      publicPath: '/en/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/hand-wash.html',
+      filename: 'en/hand-wash.html',
+      publicPath: '/en/',
+    }),
+
+    //============ images ============
     new CopyWebpackPlugin({
       patterns: [
         {
