@@ -1,7 +1,10 @@
 .contact {
-  @extend %container;
-  padding: 120px 0 180px;
-  & .contact-main-wrap {
+  padding-top: 120px;
+  padding-bottom: 180px;
+
+  & .contact-container {
+    @extend %container;
+    padding: 0;
     display: flex;
   }
 }
@@ -80,8 +83,12 @@
   }
 }
 
+.box-recaptcha {
+  display: flex;
+  justify-content: center;
+}
+
 .form-btn {
-  margin-top: 40px;
   background-color: transparent;
 
   display: inline-flex;

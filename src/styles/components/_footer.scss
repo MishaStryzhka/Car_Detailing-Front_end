@@ -1,15 +1,17 @@
 .footer {
-  & .container {
+  & .footer-container {
     @extend %container;
+
     padding-top: 66px;
     padding-bottom: 66px;
+
     display: flex;
     gap: 150px;
-    background: url(../images/footer-photo.png);
-    background-size: 1440px 464px;
-    background-repeat: no-repeat;
+    justify-content: space-between;
 
-    // background-size: cover;
+    background: url(../images/footer-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -111,5 +113,14 @@
     & a {
       color: $primary-site-color;
     }
+  }
+}
+
+.wrap-languages {
+  display: flex;
+  gap: 8px;
+
+  & .language {
+    @extend %link;
   }
 }
