@@ -1,15 +1,19 @@
 .contact {
-  padding-top: 120px;
-  padding-bottom: 180px;
-
+  @extend %container;
+  padding: 120px 0 180px;
   & .contact-main-wrap {
     display: flex;
   }
 }
+.contact-main-wrap {
+  height: 600px;
+}
 .contact-first-wrap {
   display: block;
+  // height: 574px;
   width: 400px;
   background: url(../images/car-form.png);
+  background-size: 364px 574px;
   background-repeat: no-repeat;
   background-size: cover;
 }

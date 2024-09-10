@@ -17,7 +17,9 @@
 .header-pages {
   position: absolute;
   top: 0;
-  height: 92px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
 
   background-color: $primary-black-color;
 }

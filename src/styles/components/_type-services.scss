@@ -1,0 +1,117 @@
+%common-container {
+  @extend %container;
+
+  background-size: 1440px 900px;
+  background-repeat: no-repeat;
+  background-position: cover;
+
+  position: relative;
+  height: 900px;
+  padding-top: 116px;
+}
+
+.container-hand-wash {
+  @extend %common-container;
+  background-image: url(../images/bg-hand-wash-car.png);
+}
+
+.container-dry-cleaning {
+  @extend %common-container;
+  background-image: url(../images/bg-dry-cleaning.png);
+}
+
+.container-hard-wax {
+  @extend %common-container;
+  background-image: url(../images/bg-photo-hard-wax.png);
+}
+
+.container-polishing {
+  @extend %common-container;
+  background-image: url(../images/bg-photo-polishing.png);
+}
+
+.type-services-link-back {
+  display: flex;
+  padding: 8px;
+  gap: 12px;
+  // margin-top: 116px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+
+  color: $border-color;
+  text-decoration: none;
+}
+
+.icon-btn-next {
+  background: url(../images/icons/arrow.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.type-services-wrap {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.type-services-wrap-text {
+  max-width: 630px;
+}
+
+.type-services-title {
+  font-family: 'Noto Serif Display';
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 40px;
+
+  color: $secondary-white-color;
+}
+
+.type-services-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  margin-bottom: 16px;
+
+  color: $secondary-white-color;
+}
+
+%common-img {
+  width: 630px;
+  height: 400px;
+  box-shadow: 18px 18px 80px 6px rgba(184, 135, 92, 0.5);
+}
+
+.hand-wash-photo {
+  @extend %common-img;
+  background: url(../images/hand-wash-car.png), no-repeat;
+}
+
+.dry-cleaning-photo {
+  @extend %common-img;
+  background: url(../images/dry-cleaning-car.png), no-repeat;
+}
+
+.hard-wax-photo {
+  @extend %common-img;
+  background: url(../images/hard-wax-car.png), no-repeat;
+}
+
+.polishing-photo {
+  @extend %common-img;
+  background: url(../images/polishing-car.png), no-repeat;
+}

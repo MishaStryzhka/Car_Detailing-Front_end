@@ -46,6 +46,19 @@ module.exports = {
       publicPath: '/ua/',
     }),
 
+    new HtmlWebpackPlugin({
+      filename: 'dry-cleaning.html',
+      template: './src/dry-cleaning.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'hard-wax.html',
+      template: './src/hard-wax.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'polishing.html',
+      template: './src/polishing.html',
+    }),
+
     //============ cs ============
     new HtmlWebpackPlugin({
       template: './src/cs/index.html',
