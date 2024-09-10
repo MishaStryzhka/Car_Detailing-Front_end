@@ -25,6 +25,11 @@
   background-image: url(../images/bg-photo-hard-wax.png);
 }
 
+.container-polishing {
+  @extend %common-container;
+  background-image: url(../images/bg-photo-polishing.png);
+}
+
 .type-services-link-back {
   display: flex;
   padding: 8px;
@@ -104,4 +109,9 @@
 .hard-wax-photo {
   @extend %common-img;
   background: url(../images/hard-wax-car.png), no-repeat;
+}
+
+.polishing-photo {
+  @extend %common-img;
+  background: url(../images/polishing-car.png), no-repeat;
 }

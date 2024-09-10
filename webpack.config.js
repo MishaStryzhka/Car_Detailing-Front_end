@@ -50,6 +50,10 @@ module.exports = {
       filename: 'hard-wax.html',
       template: './src/hard-wax.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'polishing.html',
+      template: './src/polishing.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
