@@ -20,45 +20,8 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="header__container">
-        <a href="./index.html" class="logo"></a>
-        <nav>
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="#about-us" class="site-nav__link">Про нас</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#services" class="site-nav__link">Послуги</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#examples-of-work" class="site-nav__link">Приклади робіт</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#reviews" class="site-nav__link">Відгуки</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#contacts" class="site-nav__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="contact-box">
-          <a
-            class="contact-link ins"
-            href="https://www.instagram.com/vip.car_detailing/"
-            target="_blank"
-          >
-          </a>
-          <a
-            class="contact-link tiktok"
-            href="https://www.tiktok.com/@vip_autodetailing"
-            target="_blank"
-          >
-          </a>
-          <a href="#contact" class="contact-btn">Отримати консультацію</a>
-        </div>
-      </div>
-    </div>
+    <!-- header -->
+    <%= require('html-loader!./partials/header.html').default %>
 
     <section id="hero" class="hero">
       <div class="container">
@@ -305,147 +268,11 @@
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="contact-container">
-        <div class="contact-first-wrap"></div>
-        <div class="contact-second-wrap">
-          <div class="contact-wrap">
-            <h2 class="contact-title">
-              Дізнайтесь вартість<br />
-              детайлінгу для вашого авто
-            </h2>
-            <p class="contact-text">Ми зв’яжемось із вами найближчим часом:</p>
-            <form
-              id="contactForm"
-              class="contact-form"
-              netlify
-              data-netlify-recaptcha="true"
-              data-netlify="true"
-            >
-              <input type="text" name="name" placeholder="Ім'я" />
-              <input type="tel" name="phone" placeholder="Номер телефону" />
-              <input type="email" name="email" placeholder="Email" />
-              <textarea name="text" placeholder="Ваше повідомлення"></textarea>
-              <div data-netlify-recaptcha="true"></div>
-              <button type="submit" class="form-btn">Отримати консультацію</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- contact -->
+    <%= require('html-loader!./partials/contact.html').default %>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div id="contacts" class="footer-left">
-          <div class="fotter-left-first">
-            <a class="logo logo--footer" href="./index.html"></a>
-            <p class="footer-text">
-              Детейлінг студія<br />
-              повного циклу
-            </p>
-          </div>
-          <div class="fotter-left-second">
-            <h4 class="footer-title">Контакти</h4>
-            <ul class="footer-list">
-              <li class="footer-item">
-                <svg class="footer-icon location-pin"></svg>
-                <a class="footer-text" href="" target="_blank" rel="noopener noreferrer"
-                  >Адреса:...</a
-                >
-              </li>
-              <li class="footer-item">
-                <svg class="footer-icon icon-phone"></svg>
-                <a class="footer-text" href="tel:+380663122112">+380 (66) 312-21-12</a>
-              </li>
-              <li class="footer-item">
-                <svg class="footer-icon icon-email"></svg>
-                <a class="footer-text" href="mailto:example@gmail.com" target="_blank"
-                  >example@gmail.com</a
-                >
-              </li>
-              <li class="footer-item footer-text">
-                <svg class="footer-icon calendar-clock"></svg>
-                Графік роботи: <br />
-                Понеділок-Субота <br />
-                9:00-18:00
-              </li>
-            </ul>
-            <!-- <p>Адреса: Київ, вул. Прикладна, 123</p>
-            <p>Телефон: +380 (50) 123-45-67</p>
-            <p>Email: example@gmail.com</p>
-             -->
-          </div>
-        </div>
-        <div class="footer-right">
-          <div class="footer-right-first">
-            <h4 class="footer-title title-menu">Меню</h4>
-            <nav>
-              <ul class="footer-list">
-                <li class="site-nav__item">
-                  <a class="site-nav__link" href="#about-us">Про нас</a>
-                </li>
-                <li class="site-nav__item">
-                  <a class="site-nav__link" href="#services">Послуги</a>
-                </li>
-                <li class="site-nav__item">
-                  <a class="site-nav__link" href="#examples-of-work">Приклади робіт</a>
-                </li>
-                <li class="site-nav__item">
-                  <a class="site-nav__link" href="#reviews">Відгуки</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer-right-second">
-            <div class="wrap">
-              <p class="footer-title">Підписуйтесь</p>
-              <div class="wrap-link">
-                <a
-                  class="contact-link ins"
-                  href="https://www.instagram.com/vip.car_detailing/"
-                  target="_blank"
-                >
-                </a>
-                <a
-                  class="contact-link tiktok"
-                  href="https://www.tiktok.com/@vip_autodetailing"
-                  target="_blank"
-                >
-                </a>
-              </div>
-            </div>
-            <div class="wrap-text">
-              <a class="footer-title" href="" target="_blank">Політика конфіденційності</a>
-            </div>
-            <div class="wrap-languages">
-              <a class="language" href="/">Čeština</a>
-              <a class="language" href="/ua/">Українська</a>
-              <a class="language" href="/en/">English</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- <footer>
-      <div class="container">
-        <div id="contacts" class="footer-left">
-          <p>Дотримуйтесь лівої половини шляху</p>
-          <p>Адреса: Київ, вул. Прикладна, 123</p>
-          <p>Телефон: +380 (50) 123-45-67</p>
-          <p>Email: example@gmail.com</p>
-          <p>Графік роботи: Пн-Пт 9:00-18:00</p>
-        </div>
-        <div class="footer-right">
-          <ul>
-            <li><a href="#about">Про нас</a></li>
-            <li><a href="#services">Послуги</a></li>
-            <li><a href="#examples">Приклади робіт</a></li>
-            <li><a href="#reviews">Відгуки</a></li>
-            <li><a href="#contacts">Контакти</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer> -->
+    <!-- footer -->
+    <%= require('html-loader!./partials/footer.html').default %>
 
     <script src="../bundle.js"></script>
   </body>

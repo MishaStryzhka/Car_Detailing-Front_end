@@ -1,0 +1,28 @@
+<section id="contact" class="contact">
+  <div class="contact-container">
+    <div class="contact-first-wrap"></div>
+    <div class="contact-second-wrap">
+      <div class="contact-wrap">
+        <h2 class="contact-title">
+          Zjistěte cenu<br />
+          detailingu pro vaše auto
+        </h2>
+        <p class="contact-text">Budeme vás kontaktovat co nejdříve:</p>
+        <form
+          id="contactForm"
+          class="contact-form"
+          netlify
+          data-netlify-recaptcha="true"
+          data-netlify="true"
+        >
+          <input type="text" name="name" placeholder="Jméno" />
+          <input type="tel" name="phone" placeholder="Telefonní číslo" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea name="text" placeholder="Vaše zpráva"></textarea>
+          <div data-netlify-recaptcha="true"></div>
+          <button type="submit" class="form-btn">Získat konzultaci</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
