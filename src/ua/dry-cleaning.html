@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <base href="/Car_Detailing-Front_end/" /> -->
     <title>VIP CAR Detailing</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,28 +18,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
-        <a href="./index.html" class="logo"></a>
+      <div class="header__container header-pages">
+        <div class="logo"></div>
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a href="./#about-us" class="site-nav__link">About Us</a>
+              <a href="./#about-us" class="site-nav__link">Про нас</a>
             </li>
             <li class="site-nav__item">
-              <a href="./#services" class="site-nav__link">Services</a>
+              <a href="./#services" class="site-nav__link">Послуги</a>
             </li>
             <li class="site-nav__item">
-              <a href="./#examples-of-work" class="site-nav__link">Examples of Work</a>
+              <a href="./#examples-of-work" class="site-nav__link">Приклади робіт</a>
             </li>
             <li class="site-nav__item">
-              <a href="./#reviews" class="site-nav__link">Reviews</a>
+              <a href="./#reviews" class="site-nav__link">Відгуки</a>
             </li>
             <li class="site-nav__item">
-              <a href="./#contacts" class="site-nav__link">Contacts</a>
+              <a href="./#contacts" class="site-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -55,60 +56,59 @@
             target="_blank"
           >
           </a>
-          <a href="#contact" class="contact-btn">Get a Consultation</a>
+          <a href="#contact" class="contact-btn">Отримати консультацію</a>
         </div>
       </div>
     </header>
-    <section class="hand-wash">
-      <div class="hand-wash-container">
-        <a class="hand-wash-link-back" href="./#services">
+    <section class="section-type-services">
+      <div class="container-dry-cleaning">
+        <a class="type-services-link-back" href="./#services">
           <div class="icon-btn-next"></div>
-          Back to All Services</a
+          До всіх послуг</a
         >
-        <div class="hand-wash-wrap">
-          <div class="hand-wash-wrap-text">
-            <h2 class="hand-wash-title">Hand Wash</h2>
-            <p class="hand-wash-description">
-              Hand washing at VIP Car Detailing is not just cleaning, it's an art!
+        <div class="type-services-wrap">
+          <div class="type-services-wrap-text">
+            <h2 class="type-services-title">Хімчистка салону</h2>
+            <p class="type-services-description">
+              За допомогою професійних засобів та обладнання ми глибоко очищаємо усі поверхні
+              салону: сидіння, килимки, оббивку дверей, підголовники, дашборд.
             </p>
-            <p class="hand-wash-description">
-              Our experts will carefully clean every inch of your car, using only premium cleaning
-              products and soft sponges that won't damage the paintwork.
+            <p class="type-services-description">
+              Видаляємо плями, забруднення, пил, алергени та неприємні запахи.
             </p>
-            <p class="hand-wash-description">
-              We pay attention to every detail, from the body to the interior. After our wash, your
-              car will truly shine with cleanliness and brilliance!
+            <p class="type-services-description">
+              Після нашої хімчистки ваш салон буде свіжим, чистим і приємним на дотик!
             </p>
           </div>
-          <div class="hand-wash-picture"></div>
+          <div class="dry-cleaning-photo"></div>
         </div>
       </div>
     </section>
     <section class="work-examples">
       <div class="container">
-        <h2 class="work-examples-title">WORK EXAMPLES</h2>
+        <h2 class="work-examples-title">ПРИКЛАДИ РОБІТ</h2>
         <ul class="work-examples-list">
           <li class="work-examples-item">
-            <img src="../images/img/examples/hand-wash-example-1.png" alt="Example 1" />
+            <img src="../images/img/examples/dry-cleaning-example-1.jpg" alt="Example 1" />
           </li>
           <li class="work-examples-item">
-            <img src="../images/img/examples/hand-wash-example-2.png" alt="Example 2" />
+            <img src="../images/img/examples/dry-cleaning-example-2.jpg" alt="Example 2" />
           </li>
           <li class="work-examples-item">
-            <img src="../images/img/examples/hand-wash-example-3.png" alt="Example 3" />
+            <img src="../images/img/examples/dry-cleaning-example-3.jpg" alt="Example 3" />
           </li>
           <!-- <li class="work-examples-item">
-            <img src="../images/img/examples/hand-wash-example-4.png" alt="Example 4" />
+            <img src="../images/img/examples/dry-cleaning-example-4.jpg" alt="Example 4" />
           </li>
           <li class="work-examples-item">
-            <img src="../images/img/examples/hand-wash-example-5.png" alt="Example 5" />
+            <img src="../images/img/examples/dry-cleaning-example-5.jpg" alt="Example 5" />
           </li>
           <li class="work-examples-item">
-            <img src="../images/img/examples/hand-wash-example-6.png" alt="Example 6" />
+            <img src="../images/img/examples/dry-cleaning-example-6.jpg" alt="Example 6" />
           </li>  -->
         </ul>
         <a class="link-wrap" href="./#services">
-          <button class="btn-back-all-services" type="button">Back to All Services</button>
+          <button class="btn-back-all-services" type="button">До всіх послуг</button>
         </a>
       </div>
     </section>
@@ -118,10 +118,10 @@
         <div class="contact-second-wrap">
           <div class="contact-wrap">
             <h2 class="contact-title">
-              Find out the cost<br />
-              of detailing for your car
+              Дізнайтесь вартість<br />
+              детайлінгу для вашого авто
             </h2>
-            <p class="contact-text">We will contact you soon:</p>
+            <p class="contact-text">Ми зв’яжемось із вами найближчим часом:</p>
             <form
               id="contactForm"
               class="contact-form"
@@ -129,12 +129,12 @@
               data-netlify-recaptcha="true"
               data-netlify="true"
             >
-              <input type="text" name="name" placeholder="Name" />
-              <input type="tel" name="phone" placeholder="Phone Number" />
+              <input type="text" name="name" placeholder="Ім'я" />
+              <input type="tel" name="phone" placeholder="Номер телефону" />
               <input type="email" name="email" placeholder="Email" />
-              <textarea name="text" placeholder="Your message"></textarea>
-              <div data-netlify-recaptcha="true" class="box-recaptcha"></div>
-              <button type="submit" class="form-btn">Get a Consultation</button>
+              <textarea name="text" placeholder="Ваше повідомлення"></textarea>
+              <div data-netlify-recaptcha="true"></div>
+              <button type="submit" class="form-btn">Отримати консультацію</button>
             </form>
           </div>
         </div>
@@ -145,15 +145,18 @@
         <div id="contacts" class="footer-left">
           <div class="fotter-left-first">
             <a class="logo logo--footer" href="./index.html"></a>
-            <p class="footer-text">Full-cycle detailing studio</p>
+            <p class="footer-text">
+              Детейлінг студія<br />
+              повного циклу
+            </p>
           </div>
           <div class="fotter-left-second">
-            <h4 class="footer-title">Contacts</h4>
+            <h4 class="footer-title">Контакти</h4>
             <ul class="footer-list">
               <li class="footer-item">
                 <svg class="footer-icon location-pin"></svg>
                 <a class="footer-text" href="" target="_blank" rel="noopener noreferrer"
-                  >Address:...</a
+                  >Адреса:...</a
                 >
               </li>
               <li class="footer-item">
@@ -168,8 +171,8 @@
               </li>
               <li class="footer-item footer-text">
                 <svg class="footer-icon calendar-clock"></svg>
-                Working Hours: <br />
-                Monday-Saturday <br />
+                Графік роботи: <br />
+                Понеділок-Субота <br />
                 9:00-18:00
               </li>
             </ul>
@@ -177,27 +180,27 @@
         </div>
         <div class="footer-right">
           <div class="footer-right-first">
-            <h4 class="footer-title title-menu">Menu</h4>
+            <h4 class="footer-title title-menu">Меню</h4>
             <nav>
               <ul class="footer-list">
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="#about-us">About Us</a>
+                  <a class="site-nav__link" href="#about-us">Про нас</a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="#services">Services</a>
+                  <a class="site-nav__link" href="#services">Послуги</a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="#examples-of-work">Examples of Work</a>
+                  <a class="site-nav__link" href="#examples-of-work">Приклади робіт</a>
                 </li>
                 <li class="site-nav__item">
-                  <a class="site-nav__link" href="#reviews">Reviews</a>
+                  <a class="site-nav__link" href="#reviews">Відгуки</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="footer-right-second">
             <div class="wrap">
-              <p class="footer-title">Subscribe</p>
+              <p class="footer-title">Підписуйтесь</p>
               <div class="wrap-link">
                 <a
                   class="contact-link ins"
@@ -214,7 +217,7 @@
               </div>
             </div>
             <div class="wrap-text">
-              <a class="footer-title" href="" target="_blank">Privacy Policy</a>
+              <a class="footer-title" href="" target="_blank">Політика конфіденційності</a>
             </div>
           </div>
         </div>
