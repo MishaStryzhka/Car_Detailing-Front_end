@@ -95,8 +95,8 @@ module.exports = {
     //============ cs ============
     new HtmlWebpackPlugin({
       template: './src/cs/index.html',
-      filename: 'cs/index.html',
-      publicPath: '/cs/',
+      filename: 'index.html',
+      publicPath: '/',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/hand-wash.html',
