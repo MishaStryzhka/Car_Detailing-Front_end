@@ -57,16 +57,34 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      filename: 'dry-cleaning.html',
-      template: './src/dry-cleaning.html',
+      template: './src/ua/dry-cleaning.html',
+      filename: 'ua/dry-cleaning.html',
+      publicPath: '/ua/',
     }),
     new HtmlWebpackPlugin({
-      filename: 'hard-wax.html',
-      template: './src/hard-wax.html',
+      template: './src/ua/hard-wax.html',
+      filename: 'ua/hard-wax.html',
+      publicPath: '/ua/',
     }),
     new HtmlWebpackPlugin({
-      filename: 'polishing.html',
-      template: './src/polishing.html',
+      template: './src/ua/polishing.html',
+      filename: 'ua/polishing.html',
+      publicPath: '/ua/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ua/disk-restoration.html',
+      filename: 'ua/disk-restoration.html',
+      publicPath: '/ua/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ua/window-tinting.html',
+      filename: 'ua/window-tinting.html',
+      publicPath: '/ua/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/ua/headlight-tinting.html',
+      filename: 'ua/headlight-tinting.html',
+      publicPath: '/ua/',
     }),
 
     //============ cs ============
@@ -80,6 +98,36 @@ module.exports = {
       filename: 'hand-wash.html',
       publicPath: '/cs/hand-wash',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/cs/dry-cleaning.html',
+      filename: 'cs/dry-cleaning.html',
+      publicPath: '/cs/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/cs/hard-wax.html',
+      filename: 'cs/hard-wax.html',
+      publicPath: '/cs/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/cs/polishing.html',
+      filename: 'cs/polishing.html',
+      publicPath: '/cs/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/cs/disk-restoration.html',
+      filename: 'cs/disk-restoration.html',
+      publicPath: '/cs/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/cs/window-tinting.html',
+      filename: 'cs/window-tinting.html',
+      publicPath: '/cs/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/cs/headlight-tinting.html',
+      filename: 'cs/headlight-tinting.html',
+      publicPath: '/cs/',
+    }),
 
     //============ en ============
     new HtmlWebpackPlugin({
@@ -91,6 +139,36 @@ module.exports = {
       template: './src/en/hand-wash.html',
       filename: 'en/hand-wash.html',
       publicPath: '/en/hand-wash',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/dry-cleaning.html',
+      filename: 'en/dry-cleaning.html',
+      publicPath: '/en/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/hard-wax.html',
+      filename: 'en/hard-wax.html',
+      publicPath: '/en/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/polishing.html',
+      filename: 'en/polishing.html',
+      publicPath: '/en/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/disk-restoration.html',
+      filename: 'en/disk-restoration.html',
+      publicPath: '/en/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/window-tinting.html',
+      filename: 'en/window-tinting.html',
+      publicPath: '/en/',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/headlight-tinting.html',
+      filename: 'en/headlight-tinting.html',
+      publicPath: '/en/',
     }),
 
     //============ images ============
