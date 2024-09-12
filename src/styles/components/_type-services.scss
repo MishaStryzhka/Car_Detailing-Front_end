@@ -35,6 +35,11 @@
   background-image: url(../images/bg-photo-disk-restoration.png);
 }
 
+.container-ceramic-coating {
+  @extend %common-container;
+  background-image: url(../images/bg-photo-ceramic-coating.png);
+}
+
 .container-window-tinting {
   @extend %common-container;
   background-image: url(../images/bg-photo-window-tinting.png);
@@ -144,4 +149,9 @@
 .headlight-tinting-photo {
   @extend %common-img;
   background: url(../images/headlight-tinting-car.png), no-repeat;
+}
+
+.ceramic-coating-photo {
+  @extend %common-img;
+  background: url(../images/ceramic-coating-car.png), no-repeat;
 }
