@@ -25,6 +25,16 @@ module.exports = {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(html)$/,
+        include: path.join(__dirname, 'src/views'),
+        use: {
+          loader: 'html-loader',
+          options: {
+            interpolate: true,
+          },
+        },
+      },
     ],
   },
   resolve: {
