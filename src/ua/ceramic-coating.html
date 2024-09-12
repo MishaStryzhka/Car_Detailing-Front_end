@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <base href="/Car_Detailing-Front_end/" /> -->
+    <title>VIP CAR Detailing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <%= require('html-loader!./partials/header.html').default %>
+
+    <section class="section-type-services">
+      <div class="container-ceramic-coating">
+        <a class="type-services-link-back" href="./#services">
+          <div class="icon-btn-next"></div>
+          До всіх послуг</a
+        >
+        <div class="type-services-wrap">
+          <div class="type-services-wrap-text">
+            <h2 class="type-services-title">Керамічне покриття</h2>
+            <p class="type-services-description">
+              Керамічне покриття для автомобіля - це найнадійніший захист від усіх негативних
+              впливів!
+            </p>
+            <p class="type-services-description">
+              Ми використовуємо преміальні керамічні покриття від відомих виробників, які
+              забезпечують довготривалий захист лакофарбового покриття від УФ-променів, води,
+              брудних плям, кислотних дощів, подряпин та інших зовнішніх впливів.
+            </p>
+            <p class="type-services-description">
+              Наш досвідчений персонал здійснює ретельне нанесення керамічного покриття з
+              дотриманням всіх технологічних стандартів, забезпечуючи рівномірне покриття кузова та
+              довготривалий ефект.
+            </p>
+            <p class="type-services-description">
+              Довірте свій автомобіль професіоналам VIP Car Detailing - ми зробимо його блискучим і
+              захищеним!
+            </p>
+          </div>
+          <div class="ceramic-coating-photo"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-adventiges-services">
+      <div class="container-adventiges-cervices">
+        <h2 class="adventiges-services-title">Додаткові переваги керамічного покриття:</h2>
+        <ul class="advantages-services-ceramic-list">
+          <li class="advantages-services-item">
+            <div class="icon-save-more"></div>
+            <h3 class="advantages-services-item_title">Неперевершений блиск</h3>
+            <p class="advantages-services-item_text">
+              Ваш автомобіль буде сяяти з глибоким, зеркальним блиском.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-design"></div>
+            <h3 class="advantages-services-item_title">Відмінний гідрофобний ефект</h3>
+            <p class="advantages-services-item_text">
+              Вода буде легко скачувати з поверхні кузова, не залишаючи розводів.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-protection"></div>
+            <h3 class="advantages-services-item_title">Захист від УФ-променів</h3>
+            <p class="advantages-services-item_text">
+              Керамічне покриття захистить фарбу від вигорання та потьмяніння.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-protection"></div>
+            <h3 class="advantages-services-item_title">Захист від хімічних речовин</h3>
+            <p class="advantages-services-item_text">
+              Керамічне покриття створює міцний бар'єр, що захищає лак від кислотних дощів та інших
+              хімічних речовин.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-protection"></div>
+            <h3 class="advantages-services-item_title">Збільшення стійкості до подряпин</h3>
+            <p class="advantages-services-item_text">
+              Керамічне покриття збільшує твердість лаку, що зменшує ризик виникнення нових
+              подряпин.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-protection"></div>
+            <h3 class="advantages-services-item_title">Довготривалий ефект</h3>
+            <p class="advantages-services-item_text">
+              Керамічне покриття збереже свій захисний ефект протягом декількох років.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="work-examples">
+      <div class="container">
+        <h2 class="work-examples-title">ПРИКЛАДИ РОБІТ</h2>
+        <ul class="work-examples-list">
+          <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-1.jpg" alt="Example 1" />
+          </li>
+          <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-2.jpg" alt="Example 2" />
+          </li>
+          <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-3.jpg" alt="Example 3" />
+          </li>
+          <!-- <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-4.jpg" alt="Example 4" />
+          </li> 
+           <li class="work-examples-item"></li>
+            <img src="../images/img/examples/ceramic-coating-example-5.jpg" alt="Example 2" />
+          </li>
+          <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-6.jpg" alt="Example 3" />
+          </li> -->
+        </ul>
+        <a class="link-wrap" href="./#services">
+          <button class="btn-back-all-services" type="button">До всіх послуг</button>
+        </a>
+      </div>
+    </section>
+    <!-- contact -->
+    <%= require('html-loader!./partials/contact.html').default %>
+
+    <!-- footer -->
+    <%= require('html-loader!./partials/footer.html').default %>
+
+    <script src="../bundle.js"></script>
+  </body>
+</html>

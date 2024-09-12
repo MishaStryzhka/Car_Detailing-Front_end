@@ -29,8 +29,8 @@
 .advantages-services-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 288px;
+  text-align: center;
+  max-width: 413px;
 }
 
 .advantages-services-item_title {
@@ -43,6 +43,9 @@
   letter-spacing: 0.07em;
   text-align: center;
 
+  margin: 0;
+  margin-bottom: 16px;
+
   color: $secondary-white-color;
 }
 
@@ -53,6 +56,7 @@
   line-height: 28px;
   letter-spacing: 0.01em;
   text-align: center;
+  margin: 0;
 
   color: $secondary-white-color;
 }
@@ -63,6 +67,7 @@
   width: 60px;
   background-size: 60px;
   margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .icon-save-more {
@@ -78,4 +83,18 @@
 .icon-protection {
   @extend %icon;
   background-image: url('../images/icons/protection.svg');
+}
+
+//
+// -------------------------
+// ceramic page
+
+.advantages-services-ceramic-list {
+  @extend %list;
+  display: grid;
+  grid-template-columns: repeat(3, 413px); /* 3 стовпці рівної ширини */
+  grid-template-rows: repeat(2, 1fr); /* 2 рядки */
+  column-gap: 20px; /* Відступ між стовпцями */
+  row-gap: 64px; /* Відступ між рядками */
+  justify-content: center;
 }
