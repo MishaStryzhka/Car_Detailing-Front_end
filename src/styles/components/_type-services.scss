@@ -30,6 +30,21 @@
   background-image: url(../images/bg-photo-polishing.png);
 }
 
+.container-disk-restoration {
+  @extend %common-container;
+  background-image: url(../images/bg-photo-disk-restoration.png);
+}
+
+.container-window-tinting {
+  @extend %common-container;
+  background-image: url(../images/bg-photo-window-tinting.png);
+}
+
+.container-headlight-tinting {
+  @extend %common-container;
+  background-image: url(../images/bg-photo-headlight-tinting.png);
+}
+
 .type-services-link-back {
   display: flex;
   padding: 8px;
@@ -114,4 +129,19 @@
 .polishing-photo {
   @extend %common-img;
   background: url(../images/polishing-car.png), no-repeat;
+}
+
+.disk-restoration-photo {
+  @extend %common-img;
+  background: url(../images/disk-restoration-car.png), no-repeat;
+}
+
+.window-tinting-photo {
+  @extend %common-img;
+  background: url(../images/window-tinting-car.png), no-repeat;
+}
+
+.headlight-tinting-photo {
+  @extend %common-img;
+  background: url(../images/headlight-tinting-car.png), no-repeat;
 }
