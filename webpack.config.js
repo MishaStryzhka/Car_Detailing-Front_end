@@ -53,7 +53,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/ua/hand-wash.html',
       filename: 'ua/hand-wash.html',
-      publicPath: '/ua/',
+      publicPath: '/ua/hand-wash',
     }),
 
     new HtmlWebpackPlugin({
@@ -73,12 +73,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/cs/index.html',
       filename: 'index.html',
-      publicPath: '/cs/',
+      publicPath: '/',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/hand-wash.html',
       filename: 'hand-wash.html',
-      publicPath: '/cs/',
+      publicPath: '/cs/hand-wash',
     }),
 
     //============ en ============
@@ -90,7 +90,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/en/hand-wash.html',
       filename: 'en/hand-wash.html',
-      publicPath: '/en/',
+      publicPath: '/en/hand-wash',
     }),
 
     //============ images ============
