@@ -91,6 +91,11 @@ module.exports = {
       filename: 'ua/ceramic-coating.html',
       publicPath: '/ua/ceramic-coating',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/ua/prices.html',
+      filename: 'ua/prices.html',
+      publicPath: '/ua/prices',
+    }),
 
     //============ cs ============
     new HtmlWebpackPlugin({
@@ -138,6 +143,11 @@ module.exports = {
       filename: 'cs/ceramic-coating.html',
       publicPath: '/cs/ceramic-coating',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/cs/prices.html',
+      filename: 'cs/prices.html',
+      publicPath: '/cs/prices',
+    }),
 
     //============ en ============
     new HtmlWebpackPlugin({
@@ -184,6 +194,11 @@ module.exports = {
       template: './src/en/ceramic-coating.html',
       filename: 'en/ceramic-coating.html',
       publicPath: '/en/ceramic-coating',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/en/prices.html',
+      filename: 'en/prices.html',
+      publicPath: '/en/prices',
     }),
 
     //============ images ============
