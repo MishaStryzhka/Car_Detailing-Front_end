@@ -100,42 +100,42 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/hand-wash.html',
-      filename: 'cs/hand-wash.html',
+      filename: 'hand-wash.html',
       publicPath: '/hand-wash',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/dry-cleaning.html',
-      filename: 'cs/dry-cleaning.html',
+      filename: 'dry-cleaning.html',
       publicPath: '/dry-cleaning',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/hard-wax.html',
-      filename: 'cs/hard-wax.html',
+      filename: 'hard-wax.html',
       publicPath: '/hard-wax',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/polishing.html',
-      filename: 'cs/polishing.html',
+      filename: 'polishing.html',
       publicPath: '/polishing',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/disk-restoration.html',
-      filename: 'cs/disk-restoration.html',
+      filename: 'disk-restoration.html',
       publicPath: '/disk-restoration',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/window-tinting.html',
-      filename: 'cs/window-tinting.html',
+      filename: 'window-tinting.html',
       publicPath: '/window-tinting',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/headlight-tinting.html',
-      filename: 'cs/headlight-tinting.html',
+      filename: 'headlight-tinting.html',
       publicPath: '/headlight-tinting',
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/ceramic-coating.html',
-      filename: 'cs/ceramic-coating.html',
+      filename: 'ceramic-coating.html',
       publicPath: '/ceramic-coating',
     }),
 
