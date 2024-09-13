@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <base href="/Car_Detailing-Front_end/" /> -->
+    <title>VIP CAR Detailing</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <%= require('html-loader!./partials/header.html').default %>
+
+    <section class="section-type-services">
+      <div class="container-ceramic-coating">
+        <a class="type-services-link-back" href="./#services">
+          <div class="icon-btn-next"></div>
+          Back to All Services</a
+        >
+        <div class="type-services-wrap">
+          <div class="type-services-wrap-text">
+            <h2 class="type-services-title">Ceramic Coating</h2>
+            <p class="type-services-description">
+              Ceramic coating for your car is the most reliable protection against all negative
+              influences!
+            </p>
+            <p class="type-services-description">
+              We use premium ceramic coatings from renowned manufacturers, providing long-lasting
+              protection for the paintwork from UV rays, water, dirt stains, acid rain, scratches,
+              and other external impacts.
+            </p>
+            <p class="type-services-description">
+              Our experienced staff carefully apply the ceramic coating according to all
+              technological standards, ensuring even coverage of the body and a long-lasting effect.
+            </p>
+            <p class="type-services-description">
+              Trust your car to the professionals at VIP Car Detailing – we’ll make it shiny and
+              protected!
+            </p>
+          </div>
+          <div class="ceramic-coating-photo"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-adventiges-services">
+      <div class="container-adventiges-cervices">
+        <h2 class="adventiges-services-title">Additional Benefits of Ceramic Coating:</h2>
+        <ul class="advantages-services-ceramic-list">
+          <li class="advantages-services-item">
+            <div class="icon-save-more"></div>
+            <h3 class="advantages-services-item_title">Unmatched Shine</h3>
+            <p class="advantages-services-item_text">
+              Your car will shine with a deep, mirror-like gloss.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-design"></div>
+            <h3 class="advantages-services-item_title">Excellent Hydrophobic Effect</h3>
+            <p class="advantages-services-item_text">
+              Water will easily roll off the surface, leaving no streaks.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-protection"></div>
+            <h3 class="advantages-services-item_title">Protection from UV Rays</h3>
+            <p class="advantages-services-item_text">
+              Ceramic coating protects the paint from fading and dulling.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-protection"></div>
+            <h3 class="advantages-services-item_title">Protection from Chemicals</h3>
+            <p class="advantages-services-item_text">
+              Ceramic coating creates a strong barrier that protects the paint from acid rain and
+              other chemicals.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-protection"></div>
+            <h3 class="advantages-services-item_title">Increased Scratch Resistance</h3>
+            <p class="advantages-services-item_text">
+              Ceramic coating increases the hardness of the paint, reducing the risk of new
+              scratches.
+            </p>
+          </li>
+          <li class="advantages-services-item">
+            <div class="icon-protection"></div>
+            <h3 class="advantages-services-item_title">Long-lasting Effect</h3>
+            <p class="advantages-services-item_text">
+              Ceramic coating will maintain its protective effect for several years.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="work-examples">
+      <div class="container">
+        <h2 class="work-examples-title">WORK EXAMPLES</h2>
+        <ul class="work-examples-list">
+          <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-1.jpg" alt="Example 1" />
+          </li>
+          <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-2.jpg" alt="Example 2" />
+          </li>
+          <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-3.jpg" alt="Example 3" />
+          </li>
+          <!-- <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-4.jpg" alt="Example 4" />
+          </li> 
+           <li class="work-examples-item"></li>
+            <img src="../images/img/examples/ceramic-coating-example-5.jpg" alt="Example 2" />
+          </li>
+          <li class="work-examples-item">
+            <img src="../images/img/examples/ceramic-coating-example-6.jpg" alt="Example 3" />
+          </li> -->
+        </ul>
+        <a class="link-wrap" href="./#services">
+          <button class="btn-back-all-services" type="button">Back to All Services</button>
+        </a>
+      </div>
+    </section>
+    <!-- contact -->
+    <%= require('html-loader!./partials/contact.html').default %>
+
+    <!-- footer -->
+    <%= require('html-loader!./partials/footer.html').default %>
+
+    <script src="../bundle.js"></script>
+  </body>
+</html>
