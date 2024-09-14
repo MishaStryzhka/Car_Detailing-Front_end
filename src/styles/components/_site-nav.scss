@@ -1,8 +1,13 @@
 .site-nav {
-  @extend %list;
-  @extend %flex-center;
+  display: none;
 
-  gap: 16px;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    @include list;
+    @include flex-center;
+
+    gap: 16px;
+  }
 }
 
 .site-nav__item {
@@ -55,4 +60,29 @@
   // &:focus {
   //   color: $primary-site-color;
   // }
+}
+
+.wrap-box {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.contact-btn {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.button-burger {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  background-image: url('../images/icons/burger.svg');
+  cursor: pointer;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }

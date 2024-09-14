@@ -1,7 +1,9 @@
 @import './utils/variables';
+
 @import './base/normalize';
 @import './utils/breakpoints';
 @import './utils/placeholders';
+@import './utils/mixin';
 
 @import './components/body';
 
@@ -32,3 +34,6 @@
 
 // swiper
 @import './components/swiper';
+
+// burger
+@import './components/burger-menu';

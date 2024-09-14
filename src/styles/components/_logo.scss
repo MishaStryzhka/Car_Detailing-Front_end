@@ -43,9 +43,12 @@
   background-size: 100px 100px;
 
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   color: $primary-white-color;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .logo__web {
