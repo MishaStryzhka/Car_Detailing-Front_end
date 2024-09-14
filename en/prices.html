@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <base href="/Car_Detailing-Front_end/" /> -->
     <title>VIP CAR Detailing</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,8 +18,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
 
-    <link rel="stylesheet" href="../css/main.min.css" />
-  <script defer src="/en/hand-wash/bundle.js"></script></head>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  <script defer src="/en/prices/bundle.js"></script></head>
   <body>
     <!-- header -->
     <div class="header">
@@ -62,65 +63,21 @@
 </div>
 
 
-    <section class="hand-wash">
-      <div class="hand-wash-container">
-        <a class="hand-wash-link-back" href="./#services">
-          <div class="icon-btn-next"></div>
-          Back to All Services</a
-        >
-        <div class="hand-wash-wrap">
-          <div class="hand-wash-wrap-text">
-            <h2 class="hand-wash-title">Hand Wash</h2>
-            <p class="hand-wash-description">
-              Hand washing at VIP Car Detailing is not just cleaning, it's an art!
-            </p>
-            <p class="hand-wash-description">
-              Our experts will carefully clean every inch of your car, using only premium cleaning
-              products and soft sponges that won't damage the paintwork.
-            </p>
-            <p class="hand-wash-description">
-              We pay attention to every detail, from the body to the interior. After our wash, your
-              car will truly shine with cleanliness and brilliance!
-            </p>
-          </div>
-          <div class="hand-wash-picture"></div>
-        </div>
+    <section class="prices-section">
+      <div class="price-box">
+        <img src="../images/img/examples/price-list-1.jpg" alt="List 1" />
       </div>
-    </section>
-
-    <section class="work-examples">
-      <div class="container">
-        <h2 class="work-examples-title">WORK EXAMPLES</h2>
-        <swiper-container
-          class="mySwiper"
-          navigation="true"
-          pagination="true"
-          pagination-clickable="true"
-          space-between="20"
-          slides-per-view="3"
-        >
-          <swiper-slide
-            ><img src="../images/img/examples/hand-wash-example-1.png" alt="Example 1"
-          /></swiper-slide>
-          <swiper-slide
-            ><img src="../images/img/examples/hand-wash-example-2.png" alt="Example 2"
-          /></swiper-slide>
-          <swiper-slide
-            ><img src="../images/img/examples/hand-wash-example-3.png" alt="Example 3"
-          /></swiper-slide>
-          <swiper-slide
-            ><img src="../images/img/examples/hand-wash-example-4.png" alt="Example 4"
-          /></swiper-slide>
-          <swiper-slide
-            ><img src="../images/img/examples/hand-wash-example-5.png" alt="Example 5"
-          /></swiper-slide>
-          <swiper-slide
-            ><img src="../images/img/examples/hand-wash-example-6.png" alt="Example 6"
-          /></swiper-slide>
-        </swiper-container>
-        <a class="link-wrap" href="./#services">
-          <button class="btn-back-all-services" type="button">Back to All Services</button>
-        </a>
+      <div class="price-box">
+        <img src="../images/img/examples/price-list-2.jpg" alt="List 2" />
+      </div>
+      <div class="price-box">
+        <img src="../images/img/examples/price-list-3.jpg" alt="List 3" />
+      </div>
+      <div class="price-box">
+        <img src="../images/img/examples/price-list-4.jpg" alt="List 4" />
+      </div>
+      <div class="price-box">
+        <img src="../images/img/examples/price-list-5.jpg" alt="List 5" />
       </div>
     </section>
 
@@ -245,6 +202,5 @@
 
 
     <script src="../bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
