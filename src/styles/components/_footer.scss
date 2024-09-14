@@ -122,5 +122,12 @@
 
   & .language {
     @extend %link;
+    color: #b8875c;
   }
+}
+
+.language.active {
+  pointer-events: none;
+  color: gray; /* або будь-який інший стиль для неклікабельного посилання */
+  cursor: default; /* зміна курсора на звичайний */
 }
