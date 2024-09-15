@@ -122,7 +122,14 @@
 
   & .language {
     @extend %link;
-    color: #b8875c;
+    color: #fff;
+
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      scale: 1.1;
+
+      color: $primary-site-color;
+    }
   }
 }
 
