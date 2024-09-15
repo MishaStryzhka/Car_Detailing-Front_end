@@ -5,26 +5,31 @@
 }
 
 .contact-link {
-  width: 40px;
-  height: 40px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
 
-  padding: 8px;
+    width: 40px;
+    height: 40px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24px;
+    padding: 8px;
 
-  &.ins {
-    background-image: url('../images/icons/instagram.svg');
-  }
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
 
-  &.tiktok {
-    background-image: url('../images/icons/tiktok.svg');
-  }
+    &.ins {
+      background-image: url('../images/icons/instagram.svg');
+    }
 
-  @extend %transition-default;
-  &:hover {
-    scale: 1.15;
+    &.tiktok {
+      background-image: url('../images/icons/tiktok.svg');
+    }
+
+    // @include transition-default;
+    // &:hover {
+    //   scale: 1.15;
+    // }
   }
 }
 

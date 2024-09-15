@@ -2,15 +2,13 @@
   position: relative;
   @extend %container;
   @extend %flex-center;
+  // display: flex;
   justify-content: space-between;
+  height: 76px;
 
-  @media screen and (max-width: 767px) {
-    height: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     height: 92px;
-    padding: 16px 80px;
+    // padding: 16px 80px;
   }
 }
 

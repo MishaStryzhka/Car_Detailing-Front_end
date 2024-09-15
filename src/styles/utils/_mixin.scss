@@ -1,0 +1,15 @@
+@mixin list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition-default {
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
