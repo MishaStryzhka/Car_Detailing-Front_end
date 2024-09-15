@@ -81,20 +81,28 @@
     <section class="work-examples">
       <div class="container">
         <h2 class="work-examples-title">PŘÍKLADY PRACÍ</h2>
-        <ul class="work-examples-list">
-          <li class="work-examples-item">
-            <img src="../images/img/examples/headlight-tinting-example-1.jpg" alt="Example 1" />
-          </li>
-          <li class="work-examples-item">
-            <img src="../images/img/examples/headlight-tinting-example-2.jpg" alt="Example 2" />
-          </li>
-          <li class="work-examples-item">
-            <img src="../images/img/examples/headlight-tinting-example-3.jpg" alt="Example 3" />
-          </li>
-          <!-- <li class="work-examples-item">
-            <img src="../images/img/examples/headlight-tinting-example-4.jpg" alt="Example 4" />
-          </li>  -->
-        </ul>
+        <swiper-container
+          class="mySwiper"
+          navigation="true"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="20"
+          slides-per-view="3"
+        >
+          <swiper-slide
+            ><img src="../images/img/examples/headlight-tinting-example-1.jpg" alt="Example 1"
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/img/examples/headlight-tinting-example-2.jpg" alt="Example 2"
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/img/examples/headlight-tinting-example-3.jpg" alt="Example 3"
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/img/examples/headlight-tinting-example-4.jpg" alt="Example 4"
+          /></swiper-slide>
+        </swiper-container>
+
         <a class="link-wrap" href="./#services">
           <button class="btn-back-all-services" type="button">Zpět na všechny služby</button>
         </a>
@@ -107,5 +115,6 @@
     <%= require('html-loader!./partials/footer.html').default %>
 
     <script src="../bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

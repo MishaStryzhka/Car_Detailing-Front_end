@@ -2,29 +2,63 @@
   & .footer-container {
     @extend %container;
 
-    padding-top: 66px;
-    padding-bottom: 66px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     display: flex;
-    gap: 150px;
+    flex-direction: column;
+    gap: 40px;
     justify-content: space-between;
 
-    background: url(../images/footer-photo.png);
+    background: url(../images/bg-footer-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      padding-top: 0px;
+      padding-bottom: 14px;
+      gap: 120.5px;
+      background: url(../images/bg-footer-tablet.png);
+    }
+
+    @media screen and (min-width: $desktop) {
+      background: url(../images/footer-photo.png);
+      padding-top: 66px;
+      padding-bottom: 66px;
+      gap: 150px;
+    }
   }
 }
 
 .footer-right,
 .footer-left {
   display: flex;
-  gap: 154px;
+  flex-direction: column;
+  gap: 40px;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    gap: 154px;
+  }
+}
+
+.footer-left {
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 120.5px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 154px;
+  }
 }
 
 .footer-right-second {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
+  @media screen and (min-width: $tablet) {
+    gap: 40px;
+  }
 }
 
 .footer-title {
@@ -60,8 +94,12 @@
   @extend %list;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-top: 40px;
+  gap: 16px;
+  margin-top: 24px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 40px;
+    gap: 24px;
+  }
 }
 
 .footer-item {
@@ -106,6 +144,7 @@
 }
 
 .wrap-text {
+  width: 297px;
   padding: 8px;
   border-bottom: 1px solid $border-color;
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
