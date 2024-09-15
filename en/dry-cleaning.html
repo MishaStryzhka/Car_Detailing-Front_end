@@ -44,20 +44,23 @@
         </li>
       </ul>
     </nav>
-    <div class="contact-box">
-      <a
-        class="contact-link ins"
-        href="https://www.instagram.com/vip.car_detailing/"
-        target="_blank"
-      >
-      </a>
-      <a
-        class="contact-link tiktok"
-        href="https://www.tiktok.com/@vip_autodetailing"
-        target="_blank"
-      >
-      </a>
-      <a href="#contact" class="contact-btn">Get a Consultation</a>
+    <div class="wrap-box">
+      <div class="contact-box">
+        <a
+          class="contact-link ins"
+          href="https://www.instagram.com/vip.car_detailing/"
+          target="_blank"
+        >
+        </a>
+        <a
+          class="contact-link tiktok"
+          href="https://www.tiktok.com/@vip_autodetailing"
+          target="_blank"
+        >
+        </a>
+        <a href="#contact" class="contact-btn">Get a Consultation</a>
+      </div>
+      <button type="button" class="button-burger"></button>
     </div>
   </div>
 </div>
@@ -90,26 +93,34 @@
     <section class="work-examples">
       <div class="container">
         <h2 class="work-examples-title">WORK EXAMPLES</h2>
-        <ul class="work-examples-list">
-          <li class="work-examples-item">
-            <img src="./images/img/examples/dry-cleaning-example-1.jpg" alt="Example 1" />
-          </li>
-          <li class="work-examples-item">
-            <img src="./images/img/examples/dry-cleaning-example-2.jpg" alt="Example 2" />
-          </li>
-          <li class="work-examples-item">
-            <img src="./images/img/examples/dry-cleaning-example-3.jpg" alt="Example 3" />
-          </li>
-          <!-- <li class="work-examples-item">
-            <img src="./images/img/examples/dry-cleaning-example-4.jpg" alt="Example 4" />
-          </li>
-          <li class="work-examples-item">
-            <img src="./images/img/examples/dry-cleaning-example-5.jpg" alt="Example 5" />
-          </li>
-          <li class="work-examples-item">
-            <img src="./images/img/examples/dry-cleaning-example-6.jpg" alt="Example 6" />
-          </li>  -->
-        </ul>
+        <swiper-container
+          class="mySwiper"
+          navigation="true"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="20"
+          slides-per-view="3"
+        >
+          <swiper-slide
+            ><img src="../images/img/examples/dry-cleaning-example-1.jpg" alt="Example 1"
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/img/examples/dry-cleaning-example-2.jpg" alt="Example 2"
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/img/examples/dry-cleaning-example-3.jpg" alt="Example 3"
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/img/examples/dry-cleaning-example-4.jpg" alt="Example 4"
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/img/examples/dry-cleaning-example-5.jpg" alt="Example 5"
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/img/examples/dry-cleaning-example-6.jpg" alt="Example 6"
+          /></swiper-slide>
+        </swiper-container>
+
         <a class="link-wrap" href="./#services">
           <button class="btn-back-all-services" type="button">Back to All Services</button>
         </a>
@@ -236,5 +247,6 @@
 
 
     <script src="../bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
