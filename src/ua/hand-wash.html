@@ -23,28 +23,28 @@
     <!-- header -->
     <%= require('html-loader!./partials/header.html').default %>
 
-    <section class="hand-wash">
-      <div class="hand-wash-container">
-        <a class="hand-wash-link-back" href="./#services">
+    <section class="section-type-services">
+      <div class="container-hand-wash">
+        <a class="type-services-link-back" href="./#services">
           <div class="icon-btn-next"></div>
           До всіх послуг</a
         >
-        <div class="hand-wash-wrap">
-          <div class="hand-wash-wrap-text">
-            <h2 class="hand-wash-title">Ручна мийка</h2>
-            <p class="hand-wash-description">
+        <div class="type-services-wrap">
+          <div class="type-services-wrap-text">
+            <h2 class="type-services-title">Ручна мийка</h2>
+            <p class="type-services-description">
               Ручна мийка в VIP Car Detailing - це не просто миття, а справжнє мистецтво!
             </p>
-            <p class="hand-wash-description">
+            <p class="type-services-description">
               Наші майстри дбайливо очистять кожен сантиметр вашого автомобіля, використовуючи
               тільки преміальні миючі засоби та м'які губки, що не зашкодять лакофарбовому покриттю.
             </p>
-            <p class="hand-wash-description">
+            <p class="type-services-description">
               Ми звертаємо увагу на кожну деталь, від кузова до салону. Після нашої мийки ваш
               автомобіль буде справді сяяти чистотою і блиском!
             </p>
           </div>
-          <div class="hand-wash-picture"></div>
+          <div class="hand-wash-photo"></div>
         </div>
       </div>
     </section>
@@ -91,6 +91,9 @@
 
     <!-- footer -->
     <%= require('html-loader!./partials/footer.html').default %>
+
+    <!-- burger -->
+    <%= require('html-loader!./partials/burger.html').default %>
 
     <script src="../bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>

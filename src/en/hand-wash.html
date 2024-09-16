@@ -23,32 +23,31 @@
     <!-- header -->
     <%= require('html-loader!./partials/header.html').default %>
 
-    <section class="hand-wash">
-      <div class="hand-wash-container">
-        <a class="hand-wash-link-back" href="./#services">
+    <section class="section-type-services">
+      <div class="container-hand-wash">
+        <a class="type-services-link-back" href="./#services">
           <div class="icon-btn-next"></div>
           Back to All Services</a
         >
-        <div class="hand-wash-wrap">
-          <div class="hand-wash-wrap-text">
-            <h2 class="hand-wash-title">Hand Wash</h2>
-            <p class="hand-wash-description">
+        <div class="type-services-wrap">
+          <div class="type-services-wrap-text">
+            <h2 class="type-services-title">Hand Wash</h2>
+            <p class="type-services-description">
               Hand washing at VIP Car Detailing is not just cleaning, it's an art!
             </p>
-            <p class="hand-wash-description">
+            <p class="type-services-description">
               Our experts will carefully clean every inch of your car, using only premium cleaning
               products and soft sponges that won't damage the paintwork.
             </p>
-            <p class="hand-wash-description">
+            <p class="type-services-description">
               We pay attention to every detail, from the body to the interior. After our wash, your
               car will truly shine with cleanliness and brilliance!
             </p>
           </div>
-          <div class="hand-wash-picture"></div>
+          <div class="hand-wash-photo"></div>
         </div>
       </div>
     </section>
-
     <section class="work-examples">
       <div class="container">
         <h2 class="work-examples-title">WORK EXAMPLES</h2>
@@ -90,6 +89,9 @@
 
     <!-- footer -->
     <%= require('html-loader!./partials/footer.html').default %>
+
+    <!-- burger -->
+    <%= require('html-loader!./partials/burger.html').default %>
 
     <script src="../bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
