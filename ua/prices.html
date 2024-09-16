@@ -23,7 +23,7 @@
   <body>
     <!-- header -->
     <div class="header">
-  <div class="header__container">
+  <div class="header__container header-pages">
     <a href="./index.html" class="logo"></a>
     <nav>
       <ul class="site-nav">
@@ -60,7 +60,7 @@
         </a>
         <a href="#contact" class="contact-btn">Отримати консультацію</a>
       </div>
-      <button type="button" class="button-burger"></button>
+      <button type="button" class="button-burger" data-menu-open></button>
     </div>
   </div>
 </div>
@@ -210,6 +210,49 @@
     </div>
   </div>
 </footer>
+
+
+    <!-- burger -->
+    <div class="box-burger-menu is-hidden" data-menu>
+  <button type="button" class="menu-close-btn button" data-menu-close></button>
+
+  <nav>
+    <ul class="site-nav-burger-menu">
+      <li class="site-nav__item">
+        <a href="#about-us" class="site-nav__link">Про нас</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#services" class="site-nav__link">Послуги</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#examples-of-work" class="site-nav__link">Приклади робіт</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="../../ua/prices.html" class="site-nav__link">Прайс</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#contacts" class="site-nav__link">Контакти</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="contact-box-burger-menu">
+    <p class="title-link-burger-menu">Підписуйтесь</p>
+    <div class="wrap-links">
+      <a
+        class="link-burger-menu ins"
+        href="https://www.instagram.com/vip.car_detailing/"
+        target="_blank"
+      >
+      </a>
+      <a
+        class="link-burger-menu tiktok"
+        href="https://www.tiktok.com/@vip_autodetailing"
+        target="_blank"
+      >
+      </a>
+    </div>
+  </div>
+</div>
 
 
     <script src="../bundle.js"></script>

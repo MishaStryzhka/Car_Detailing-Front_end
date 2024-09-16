@@ -22,7 +22,7 @@
   <body>
     <!-- header -->
     <div class="header">
-  <div class="header__container">
+  <div class="header__container header-pages">
     <a href="./index.html" class="logo"></a>
     <nav>
       <ul class="site-nav">
@@ -59,38 +59,37 @@
         </a>
         <a href="#contact" class="contact-btn">Get a Consultation</a>
       </div>
-      <button type="button" class="button-burger"></button>
+      <button type="button" class="button-burger" data-menu-open></button>
     </div>
   </div>
 </div>
 
 
-    <section class="hand-wash">
-      <div class="hand-wash-container">
-        <a class="hand-wash-link-back" href="./#services">
+    <section class="section-type-services">
+      <div class="container-hand-wash">
+        <a class="type-services-link-back" href="./#services">
           <div class="icon-btn-next"></div>
           Back to All Services</a
         >
-        <div class="hand-wash-wrap">
-          <div class="hand-wash-wrap-text">
-            <h2 class="hand-wash-title">Hand Wash</h2>
-            <p class="hand-wash-description">
+        <div class="type-services-wrap">
+          <div class="type-services-wrap-text">
+            <h2 class="type-services-title">Hand Wash</h2>
+            <p class="type-services-description">
               Hand washing at VIP Car Detailing is not just cleaning, it's an art!
             </p>
-            <p class="hand-wash-description">
+            <p class="type-services-description">
               Our experts will carefully clean every inch of your car, using only premium cleaning
               products and soft sponges that won't damage the paintwork.
             </p>
-            <p class="hand-wash-description">
+            <p class="type-services-description">
               We pay attention to every detail, from the body to the interior. After our wash, your
               car will truly shine with cleanliness and brilliance!
             </p>
           </div>
-          <div class="hand-wash-picture"></div>
+          <div class="hand-wash-photo"></div>
         </div>
       </div>
     </section>
-
     <section class="work-examples">
       <div class="container">
         <h2 class="work-examples-title">WORK EXAMPLES</h2>
@@ -249,6 +248,49 @@
     </div>
   </div>
 </footer>
+
+
+    <!-- burger -->
+    <div class="box-burger-menu is-hidden" data-menu>
+  <button type="button" class="menu-close-btn button" data-menu-close></button>
+
+  <nav>
+    <ul class="site-nav-burger-menu">
+      <li class="site-nav__item">
+        <a href="#about-us" class="site-nav__link">About Us</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#services" class="site-nav__link">Services</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#examples-of-work" class="site-nav__link">Examples of Work</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="../../ua/prices.html" class="site-nav__link">Pricing</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#contacts" class="site-nav__link">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="contact-box-burger-menu">
+    <p class="title-link-burger-menu">Subscribe</p>
+    <div class="wrap-links">
+      <a
+        class="link-burger-menu ins"
+        href="https://www.instagram.com/vip.car_detailing/"
+        target="_blank"
+      >
+      </a>
+      <a
+        class="link-burger-menu tiktok"
+        href="https://www.tiktok.com/@vip_autodetailing"
+        target="_blank"
+      >
+      </a>
+    </div>
+  </div>
+</div>
 
 
     <script src="../bundle.js"></script>
