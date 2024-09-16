@@ -145,8 +145,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/cs/prices.html',
-      filename: 'cs/prices.html',
-      publicPath: '/cs/prices',
+      filename: 'prices.html',
+      publicPath: '/prices',
     }),
 
     //============ en ============
