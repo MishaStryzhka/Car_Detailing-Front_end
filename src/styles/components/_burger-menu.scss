@@ -10,6 +10,9 @@
   align-items: center;
   gap: 40px;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   // @media screen and (min-width: $desktop) {
   //   display: none;
   // }
@@ -75,18 +78,5 @@
 }
 
 .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  margin: -1px;
+  display: none;
 }
