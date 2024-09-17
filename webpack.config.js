@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -21,9 +22,13 @@ module.exports = {
           },
         },
       },
+      // {
+      //   test: /\.scss$/,
+      //   use: ['style-loader', 'css-loader', 'sass-loader'],
+      // },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.(html)$/,
@@ -209,6 +214,9 @@ module.exports = {
           to: 'images/img',
         },
       ],
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'styles.css', // це файл, який міститиме всі стилі
     }),
   ],
   devServer: {

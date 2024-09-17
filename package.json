@@ -47,6 +47,7 @@
     "jsonfile": "^6.1.0",
     "locate-path": "^5.0.0",
     "make-dir": "^3.1.0",
+    "mini-css-extract-plugin": "^2.9.1",
     "minimatch": "^3.1.2",
     "object-assign": "^4.1.1",
     "once": "^1.4.0",
