@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_setlanguage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/setlanguage */ \"./src/js/setlanguage.js\");\n/* harmony import */ var _js_setlanguage__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_setlanguage__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_burger_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/burger-menu */ \"./src/js/burger-menu.js\");\n/* harmony import */ var _js_burger_menu__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_burger_menu__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack://car_detailing-front_end/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_setlanguage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/setlanguage */ \"./src/js/setlanguage.js\");\n/* harmony import */ var _js_setlanguage__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_setlanguage__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_burger_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/burger-menu */ \"./src/js/burger-menu.js\");\n/* harmony import */ var _js_burger_menu__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_burger_menu__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n\n\n\n\n//# sourceURL=webpack://car_detailing-front_end/./src/index.js?");
 
 /***/ }),
 
@@ -37,6 +37,17 @@ eval("(function () {\n  var refs = {\n    openMenuBtn: document.querySelector('[
 /***/ (() => {
 
 eval("document.addEventListener('DOMContentLoaded', function () {\n  var currentPath = window.location.pathname;\n  var lastSegment = currentPath.split('/').pop();\n  var languageLinks = document.querySelectorAll('.wrap-languages a');\n  languageLinks.forEach(function (link) {\n    var baseHref = link.getAttribute('href');\n    if (currentPath === baseHref + lastSegment) {\n      link.classList.add('active');\n      return;\n    }\n    link.setAttribute('href', baseHref + lastSegment);\n  });\n});\n\n//# sourceURL=webpack://car_detailing-front_end/./src/js/setlanguage.js?");
+
+/***/ }),
+
+/***/ "./src/styles/main.scss":
+/*!******************************!*\
+  !*** ./src/styles/main.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://car_detailing-front_end/./src/styles/main.scss?");
 
 /***/ })
 
