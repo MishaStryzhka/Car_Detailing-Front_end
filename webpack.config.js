@@ -61,6 +61,10 @@ module.exports = {
       filename: 'ua/hand-wash.html',
       publicPath: '/ua/hand-wash',
       inject: false,
+
+      templateParameters: {
+        class: 'header-pages',
+      },
     }),
 
     new HtmlWebpackPlugin({

@@ -20,265 +20,273 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <!-- header -->
-    <%= require('html-loader!./partials/header.html').default %>
+    <div class="body-container">
+      <div class="ellipse-1"></div>
+      <div class="ellipse-4"></div>
+      <div class="smoke-2"></div>
+      <!-- header -->
+      <%= require('html-loader!./partials/header.html').default %>
 
-    <section id="hero" class="hero">
-      <div class="container">
-        <h1 class="hero-title">
-          <span>Vip Car</span><span class="hero-description">Detailing</span>
-        </h1>
-        <div class="hero-smoke"></div>
-      </div>
-    </section>
+      <section id="hero" class="hero">
+        <div class="container">
+          <h1 class="hero-title">
+            <span>Vip Car</span><span class="hero-description">Detailing</span>
+          </h1>
+          <div class="hero-smoke"></div>
+        </div>
+      </section>
 
-    <section id="about-us" class="about-us">
-      <div class="container">
-        <ul class="features">
-          <li class="features-item">
-            <div class="features-icon icon-polish"></div>
-            <h3 class="features-title">Car Polishing</h3>
-            <p class="features-text">
-              Provides your car with a deep, mirror-like shine and protection against external
-              factors!
-            </p>
-          </li>
-          <li class="features-item">
-            <div class="features-icon icon-ceramic"></div>
-            <h3 class="features-title">Ceramic Protection</h3>
-            <p class="features-text">
-              Offers the most reliable protection against all adverse conditions!
-            </p>
-          </li>
-          <li class="features-item">
-            <div class="features-icon icon-colors"></div>
-            <h3 class="features-title">Car Tinting</h3>
-            <p class="features-text">
-              Window and light tinting – style, comfort, and safety for your car!
-            </p>
-          </li>
-        </ul>
-        <div class="about-us_header">
-          <div class="about-us_description">
-            <h2 class="about-us_title">About Us</h2>
-            <p class="about-us_text">
-              VIP Car Detailing is a professional car detailing service in Prague, working with
-              luxury and everyday cars. Our prices are affordable, and the quality of our services
-              is appreciated by hundreds of satisfied customers. We offer a wide range of services,
-              from standard car washes to full detailing. Trust your car to us – we'll make it
-              clean, shiny, and as good as new!
-            </p>
+      <section id="about-us" class="about-us">
+        <div class="container">
+          <ul class="features">
+            <li class="features-item">
+              <div class="features-icon icon-polish"></div>
+              <h3 class="features-title">Car Polishing</h3>
+              <p class="features-text">
+                Provides your car with a deep, mirror-like shine and protection against external
+                factors!
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon icon-ceramic"></div>
+              <h3 class="features-title">Ceramic Protection</h3>
+              <p class="features-text">
+                Offers the most reliable protection against all adverse conditions!
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon icon-colors"></div>
+              <h3 class="features-title">Car Tinting</h3>
+              <p class="features-text">
+                Window and light tinting – style, comfort, and safety for your car!
+              </p>
+            </li>
+          </ul>
+          <div class="about-us_header">
+            <div class="about-us_description">
+              <h2 class="about-us_title">About Us</h2>
+              <p class="about-us_text">
+                VIP Car Detailing is a professional car detailing service in Prague, working with
+                luxury and everyday cars. Our prices are affordable, and the quality of our services
+                is appreciated by hundreds of satisfied customers. We offer a wide range of
+                services, from standard car washes to full detailing. Trust your car to us – we'll
+                make it clean, shiny, and as good as new!
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="advantages" class="advantages">
-      <div class="container">
-        <h2 class="advantages-title">Advantages of VIP Car Detailing</h2>
-        <ul class="advantage-list">
-          <li class="advantages-item">
-            <div class="advantages-icon icon-professionalism"></div>
-            <div>
-              <h3 class="advantages-item_title">Professionalism and Experience</h3>
-              <p class="advantages-item_text">
-                Our team consists of experienced professionals with deep knowledge of car detailing.
-                We work with the best materials and equipment to ensure the highest quality of
-                service.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-complex"></div>
-            <div>
-              <h3 class="advantages-item_title">Comprehensive Approach</h3>
-              <p class="advantages-item_text">
-                We offer comprehensive care for your car, from exterior detailing to interior
-                cleaning. You'll find all the services you need for your car's perfect look here.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-material"></div>
-            <div>
-              <h3 class="advantages-item_title">Quality Materials</h3>
-              <p class="advantages-item_text">
-                We only use the best materials from reputable manufacturers like Koch.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-individual"></div>
-            <div>
-              <h3 class="advantages-item_title">Individual Approach</h3>
-              <p class="advantages-item_text">
-                Every car is unique. That's why we offer an individual approach, tailoring a
-                detailing plan to your specific needs.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-service"></div>
-            <div>
-              <h3 class="advantages-item_title">Convenient Services</h3>
-              <p class="advantages-item_text">
-                We understand that your time is valuable. We offer flexible working hours and a
-                pick-up/delivery service to save you time.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-garantee"></div>
-            <div>
-              <h3 class="advantages-item_title">Quality Guarantee</h3>
-              <p class="advantages-item_text">
-                We are confident in the quality of our services and provide a guarantee for all
-                types of work. You can be sure that your car will be in perfect condition.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section id="advantages" class="advantages">
+        <div class="container">
+          <h2 class="advantages-title">Advantages of VIP Car Detailing</h2>
+          <ul class="advantage-list">
+            <li class="advantages-item">
+              <div class="advantages-icon icon-professionalism"></div>
+              <div>
+                <h3 class="advantages-item_title">Professionalism and Experience</h3>
+                <p class="advantages-item_text">
+                  Our team consists of experienced professionals with deep knowledge of car
+                  detailing. We work with the best materials and equipment to ensure the highest
+                  quality of service.
+                </p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-icon icon-complex"></div>
+              <div>
+                <h3 class="advantages-item_title">Comprehensive Approach</h3>
+                <p class="advantages-item_text">
+                  We offer comprehensive care for your car, from exterior detailing to interior
+                  cleaning. You'll find all the services you need for your car's perfect look here.
+                </p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-icon icon-material"></div>
+              <div>
+                <h3 class="advantages-item_title">Quality Materials</h3>
+                <p class="advantages-item_text">
+                  We only use the best materials from reputable manufacturers like Koch.
+                </p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-icon icon-individual"></div>
+              <div>
+                <h3 class="advantages-item_title">Individual Approach</h3>
+                <p class="advantages-item_text">
+                  Every car is unique. That's why we offer an individual approach, tailoring a
+                  detailing plan to your specific needs.
+                </p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-icon icon-service"></div>
+              <div>
+                <h3 class="advantages-item_title">Convenient Services</h3>
+                <p class="advantages-item_text">
+                  We understand that your time is valuable. We offer flexible working hours and a
+                  pick-up/delivery service to save you time.
+                </p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-icon icon-garantee"></div>
+              <div>
+                <h3 class="advantages-item_title">Quality Guarantee</h3>
+                <p class="advantages-item_text">
+                  We are confident in the quality of our services and provide a guarantee for all
+                  types of work. You can be sure that your car will be in perfect condition.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section id="services" class="services">
-      <div class="services-container">
-        <h2 class="services-title">Our Services</h2>
-        <ul class="service-list">
-          <li class="services-item">
-            <img src="../images/img/services-img/services-car-1.png" alt="Service 1" />
-            <div class="wrap-description">
-              <h3 class="services-item-title">Hand Wash</h3>
-              <a href="./hand-wash.html">
-                <button class="services-btn">
-                  More About the Service
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <img src="../images/img/services-img/services-car-2.png" alt="Service 2" />
-            <div class="wrap-description">
-              <h3 class="services-item-title">Interior Cleaning</h3>
-              <a href="./dry-cleaning.html">
-                <button class="services-btn">
-                  More About the Service
-                  <div class="icon-btn-next"></div></button
-              ></a>
-            </div>
-          </li>
-          <li class="services-item">
-            <img src="../images/img/services-img/services-car-3.png" alt="Service 3" />
-            <div class="wrap-description">
-              <h3 class="services-item-title">Hard Wax</h3>
-              <a href="./hard-wax.html">
-                <button class="services-btn">
-                  More About the Service
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <img src="../images/img/services-img/services-car-4.png" alt="Service 4" />
-            <div class="wrap-description">
-              <h3 class="services-item-title">Car Polishing</h3>
-              <a href="./polishing.html">
-                <button class="services-btn">
-                  More About the Service
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <img src="../images/img/services-img/services-car-5.png" alt="Service 5" />
-            <div class="wrap-description">
-              <h3 class="services-item-title">Ceramic Coating</h3>
-              <a href="./ceramic-coating.html">
-                <button class="services-btn">
-                  More About the Service
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <img src="../images/img/services-img/services-car-6.png" alt="Service 6" />
-            <div class="wrap-description">
-              <h3 class="services-item-title">Wheel Restoration</h3>
-              <a href="./disk-restoration.html">
-                <button class="services-btn">
-                  More About the Service
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <img src="../images/img/services-img/services-car-7.png" alt="Service 7" />
-            <div class="wrap-description">
-              <h3 class="services-item-title">Window Tinting</h3>
-              <a href="./window-tinting.html">
-                <button class="services-btn">
-                  More About the Service
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <img src="../images/img/services-img/services-car-8.png" alt="Service 8" />
-            <div class="wrap-description">
-              <h3 class="services-item-title">Headlight Tinting</h3>
-              <a href="./headlight-tinting.html">
-                <button class="services-btn">
-                  More About the Service
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section id="services" class="services">
+        <div class="services-container">
+          <h2 class="services-title">Our Services</h2>
+          <ul class="service-list">
+            <li class="services-item">
+              <img src="../images/img/services-img/services-car-1.png" alt="Service 1" />
+              <div class="wrap-description">
+                <h3 class="services-item-title">Hand Wash</h3>
+                <a href="./hand-wash.html">
+                  <button class="services-btn">
+                    More About the Service
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <img src="../images/img/services-img/services-car-2.png" alt="Service 2" />
+              <div class="wrap-description">
+                <h3 class="services-item-title">Interior Cleaning</h3>
+                <a href="./dry-cleaning.html">
+                  <button class="services-btn">
+                    More About the Service
+                    <div class="icon-btn-next"></div></button
+                ></a>
+              </div>
+            </li>
+            <li class="services-item">
+              <img src="../images/img/services-img/services-car-3.png" alt="Service 3" />
+              <div class="wrap-description">
+                <h3 class="services-item-title">Hard Wax</h3>
+                <a href="./hard-wax.html">
+                  <button class="services-btn">
+                    More About the Service
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <img src="../images/img/services-img/services-car-4.png" alt="Service 4" />
+              <div class="wrap-description">
+                <h3 class="services-item-title">Car Polishing</h3>
+                <a href="./polishing.html">
+                  <button class="services-btn">
+                    More About the Service
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <img src="../images/img/services-img/services-car-5.png" alt="Service 5" />
+              <div class="wrap-description">
+                <h3 class="services-item-title">Ceramic Coating</h3>
+                <a href="./ceramic-coating.html">
+                  <button class="services-btn">
+                    More About the Service
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <img src="../images/img/services-img/services-car-6.png" alt="Service 6" />
+              <div class="wrap-description">
+                <h3 class="services-item-title">Wheel Restoration</h3>
+                <a href="./disk-restoration.html">
+                  <button class="services-btn">
+                    More About the Service
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <img src="../images/img/services-img/services-car-7.png" alt="Service 7" />
+              <div class="wrap-description">
+                <h3 class="services-item-title">Window Tinting</h3>
+                <a href="./window-tinting.html">
+                  <button class="services-btn">
+                    More About the Service
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <img src="../images/img/services-img/services-car-8.png" alt="Service 8" />
+              <div class="wrap-description">
+                <h3 class="services-item-title">Headlight Tinting</h3>
+                <a href="./headlight-tinting.html">
+                  <button class="services-btn">
+                    More About the Service
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <section id="examples-of-work" class="examples">
-      <div class="examples-container">
-        <h2 class="examples-title">Examples of Our Work</h2>
-        <div class="examples-list">
-          <img class="tall" src="../images/img/examples/our-work-car-1.png" alt="Work Example 1" />
-          <img src="../images/img/examples/our-work-car-2.png" alt="Work Example 2" />
-          <img src="../images/img/examples/our-work-car-3.png" alt="Work Example 3" />
-          <img src="../images/img/examples/our-work-car-4.png" alt="Work Example 4" />
-          <img src="../images/img/examples/our-work-car-5.png" alt="Work Example 5" />
-          <img src="../images/img/examples/our-work-car-6.png" alt="Work Example 6" />
-          <div class="examples-box-inst">
-            <div class="examples-box-inst_header">
-              <h3 class="examples-box-ins_title">WE'RE ON INSTAGRAM</h3>
-              <p class="examples-box-ins_desctiption">@vip.car_detailing</p>
+      <section id="examples-of-work" class="examples">
+        <div class="examples-container">
+          <h2 class="examples-title">Examples of Our Work</h2>
+          <div class="examples-list">
+            <img
+              class="tall"
+              src="../images/img/examples/our-work-car-1.png"
+              alt="Work Example 1"
+            />
+            <img src="../images/img/examples/our-work-car-2.png" alt="Work Example 2" />
+            <img src="../images/img/examples/our-work-car-3.png" alt="Work Example 3" />
+            <img src="../images/img/examples/our-work-car-4.png" alt="Work Example 4" />
+            <img src="../images/img/examples/our-work-car-5.png" alt="Work Example 5" />
+            <img src="../images/img/examples/our-work-car-6.png" alt="Work Example 6" />
+            <div class="examples-box-inst">
+              <div class="examples-box-inst_header">
+                <h3 class="examples-box-ins_title">WE'RE ON INSTAGRAM</h3>
+                <p class="examples-box-ins_desctiption">@vip.car_detailing</p>
+              </div>
+              <a
+                class="examples-box-inst_btn"
+                href="https://www.instagram.com/vip.car_detailing/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i> FOLLOW US</a
+              >
             </div>
-            <a
-              class="examples-box-inst_btn"
-              href="https://www.instagram.com/vip.car_detailing/"
-              target="_blank"
-              ><i class="fab fa-instagram"></i> FOLLOW US</a
-            >
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- contact -->
-    <%= require('html-loader!./partials/contact.html').default %>
+      <!-- contact -->
+      <%= require('html-loader!./partials/contact.html').default %>
 
-    <!-- footer -->
-    <%= require('html-loader!./partials/footer.html').default %>
+      <!-- footer -->
+      <%= require('html-loader!./partials/footer.html').default %>
 
-    <!-- burger -->
-    <%= require('html-loader!./partials/burger.html').default %>
-
+      <!-- burger -->
+      <%= require('html-loader!./partials/burger.html').default %>
+    </div>
     <script src="../bundle.js"></script>
   </body>
 </html>
