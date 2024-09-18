@@ -77,6 +77,78 @@
       <section id="advantages" class="advantages">
         <div class="container">
           <h2 class="advantages-title">Výhody VIP Car Detailing</h2>
+          <div class="wrap-swiper">
+            <swiper-container
+              navigation="true"
+              pagination="true"
+              pagination-clickable="true"
+              space-between="40"
+              slides-per-view="1.5"
+            >
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-professionalism"></div>
+                <div>
+                  <h3 class="advantages-item_title">Profesionalita a zkušenosti</h3>
+                  <p class="advantages-item_text">
+                    Náš tým je složen ze zkušených profesionálů s hlubokými znalostmi v oblasti
+                    autodetailingu. Pracujeme s nejlepšími materiály a vybavením, abychom zajistili
+                    nejvyšší kvalitu našich služeb.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-complex"></div>
+                <div>
+                  <h3 class="advantages-item_title">Komplexní přístup</h3>
+                  <p class="advantages-item_text">
+                    Nabízíme komplexní péči o váš vůz, od venkovního detailingu až po čištění
+                    interiéru. U nás najdete všechny potřebné služby, abyste svůj vůz uvedli do
+                    dokonalého stavu.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-material"></div>
+                <div>
+                  <h3 class="advantages-item_title">Vysoce kvalitní materiály</h3>
+                  <p class="advantages-item_text">
+                    Používáme pouze ty nejlepší materiály od renomovaných výrobců: Koch.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-individual"></div>
+                <div>
+                  <h3 class="advantages-item_title">Individuální přístup</h3>
+                  <p class="advantages-item_text">
+                    Víme, že každý vůz je jedinečný. Proto nabízíme individuální přístup každému
+                    zákazníkovi a připravujeme plán detailingu, který zohledňuje jeho speciální
+                    potřeby.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-service"></div>
+                <div>
+                  <h3 class="advantages-item_title">Pohodlný servis</h3>
+                  <p class="advantages-item_text">
+                    Chápeme, že váš čas je cenný. Proto nabízíme pohodlnou pracovní dobu a možnost
+                    objednat si službu pick-up/delivery, abyste ušetřili svůj čas.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-garantee"></div>
+                <div>
+                  <h3 class="advantages-item_title">Záruka kvality</h3>
+                  <p class="advantages-item_text">
+                    Jsme si jistí kvalitou našich služeb a poskytujeme záruku na všechny práce.
+                    Můžete si být jisti, že váš vůz bude v dokonalém stavu.
+                  </p>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
           <ul class="advantage-list">
             <li class="advantages-item">
               <div class="advantages-icon icon-professionalism"></div>
@@ -147,7 +219,17 @@
           <h2 class="services-title">Naše služby</h2>
           <ul class="service-list">
             <li class="services-item">
-              <img src="../images/img/services-img/services-car-1.png" alt="Služba 1" />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-1.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-1.jpg"
+                />
+                <img src="../images/img/services-img/services-car-1.jpg" alt="Služba 1" />
+              </picture>
               <div class="wrap-description">
                 <h3 class="services-item-title">Ruční mytí</h3>
                 <a href="./hand-wash.html">
@@ -159,7 +241,17 @@
               </div>
             </li>
             <li class="services-item">
-              <img src="../images/img/services-img/services-car-2.png" alt="Služba 2" />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-2.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-2.jpg"
+                />
+                <img src="../images/img/services-img/services-car-2.jpg" alt="Služba 2" />
+              </picture>
               <div class="wrap-description">
                 <h3 class="services-item-title">Čištění interiéru</h3>
                 <a href="./dry-cleaning.html">
@@ -170,7 +262,17 @@
               </div>
             </li>
             <li class="services-item">
-              <img src="../images/img/services-img/services-car-3.png" alt="Služba 3" />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-3.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-3.jpg"
+                />
+                <img src="../images/img/services-img/services-car-3.jpg" alt="Služba 3" />
+              </picture>
               <div class="wrap-description">
                 <h3 class="services-item-title">Tvrdý vosk</h3>
                 <a href="./hard-wax.html">
@@ -181,7 +283,17 @@
               </div>
             </li>
             <li class="services-item">
-              <img src="../images/img/services-img/services-car-4.png" alt="Služba 4" />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-4.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-4.jpg"
+                />
+                <img src="../images/img/services-img/services-car-4.jpg" alt="Služba 4" />
+              </picture>
               <div class="wrap-description">
                 <h3 class="services-item-title">Leštění auta</h3>
                 <a href="./polishing.html">
@@ -193,7 +305,17 @@
               </div>
             </li>
             <li class="services-item">
-              <img src="../images/img/services-img/services-car-5.png" alt="Služba 5" />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-5.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-5.jpg"
+                />
+                <img src="../images/img/services-img/services-car-5.jpg" alt="Služba 5" />
+              </picture>
               <div class="wrap-description">
                 <h3 class="services-item-title">Keramická ochrana vozu</h3>
                 <a href="./ceramic-coating.html">
@@ -205,7 +327,17 @@
               </div>
             </li>
             <li class="services-item">
-              <img src="../images/img/services-img/services-car-6.png" alt="Služba 6" />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-6.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-6.jpg"
+                />
+                <img src="../images/img/services-img/services-car-6.jpg" alt="Služba 6" />
+              </picture>
               <div class="wrap-description">
                 <h3 class="services-item-title">Restaurování disků</h3>
                 <a href="./disk-restoration.html">
@@ -217,7 +349,17 @@
               </div>
             </li>
             <li class="services-item">
-              <img src="../images/img/services-img/services-car-7.png" alt="Služba 7" />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-7.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-7.jpg"
+                />
+                <img src="../images/img/services-img/services-car-7.jpg" alt="Služba 7" />
+              </picture>
               <div class="wrap-description">
                 <h3 class="services-item-title">Tónování oken</h3>
                 <a href="./window-tinting.html">
@@ -229,7 +371,17 @@
               </div>
             </li>
             <li class="services-item">
-              <img src="../images/img/services-img/services-car-8.png" alt="Služba 8" />
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-8.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-8.jpg"
+                />
+                <img src="../images/img/services-img/services-car-8.jpg" alt="Služba 8" />
+              </picture>
               <div class="wrap-description">
                 <h3 class="services-item-title">Tónování světel</h3>
                 <a href="./headlight-tinting.html">
@@ -284,5 +436,6 @@
       <%= require('html-loader!./partials/burger.html').default %>
     </div>
     <script src="../bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>

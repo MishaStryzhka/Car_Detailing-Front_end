@@ -1,19 +1,32 @@
 .hero {
-  margin-top: 92px;
-
-  //   width: 900px;
-  height: 900px;
+  height: 674px;
+  @media screen and (min-width: $tablet) {
+    height: 890px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 900px;
+  }
   & .container {
     @extend %container;
     position: relative;
+    margin-top: 76px;
 
-    background: url('../images/hero_auto.jpg') no-repeat;
-    background-size: 1050px 700px;
-    background-position: 433px 108px;
-    // background-size: cover;
+    background: url(../images/hero-auto-mob.png) no-repeat;
+
+    background-size: 505px 336px;
+    background-position: -65px 338px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Фоновий колір з прозорістю */
     background-blend-mode: overlay;
+    @media screen and (min-width: $tablet) {
+      margin-top: 92px;
+      background: url(../images/hero-auto.png) no-repeat;
+      background-position: 161px 81px;
+      background-size: 1050px 700px;
+    }
+    @media screen and (min-width: $desktop) {
+      background-size: 1050px 700px;
+      background-position: 420px 97px;
+    }
   }
 }
 
@@ -21,34 +34,53 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-
+  justify-content: center;
+  padding-top: 133px;
   margin: 0;
-  padding-top: 185px;
-  padding-left: 80px;
 
   font-family: 'Noto Serif Display';
-  font-size: 80px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 80px */
+  line-height: 1;
   letter-spacing: 4.8px;
   text-transform: uppercase;
+  text-align: center;
 
   user-select: none;
   pointer-events: none;
 
-  color: #fff;
+  color: $primary-white-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 80px;
+    padding-top: 193px;
+    text-align: start;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 220px;
+  }
   & .hero-description {
-    color: #b8875c;
+    color: $primary-site-color;
   }
 }
 
 .hero-smoke {
   position: absolute;
-  top: 0;
+  top: -20px;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../images/smoke.png') no-repeat center center;
-  background-size: cover;
+  background: url(../images/smoke-mob.png) no-repeat;
+
+  z-index: 1;
+
+  @media screen and (min-width: $tablet) {
+    background: url(../images/smoke.png) no-repeat;
+    top: 0;
+    background-position: -150px -100px;
+  }
+  @media screen and (min-width: $desktop) {
+    background: url(../images/smoke.png) no-repeat center center;
+  }
 }
