@@ -1,5 +1,11 @@
 .services {
-  margin-top: 140px;
+  margin-top: 80px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 120px;
+  }
 }
 
 .services-container {
@@ -7,13 +13,30 @@
 }
 
 .services-title {
-  @extend %section-title;
+  text-align: center;
+
+  font-family: 'Noto Serif Display';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+
+  color: $secondary-white-color;
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+    line-height: 1.27;
+    letter-spacing: 2.2px;
+  }
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .service-list {
   @extend %list;
 
-  margin-top: 56px;
+  margin-top: 40px;
 
   display: flex;
   flex-wrap: wrap;
@@ -23,9 +46,8 @@
 }
 
 .services-item {
-  width: 413px;
-  height: 500px;
-
+  width: 350px;
+  height: 420px;
   border-radius: 8px;
   overflow: hidden;
 
@@ -36,6 +58,10 @@
   text-align: center;
 
   @extend %transition-default;
+  @media screen and (min-width: $tablet) {
+    width: 413px;
+    height: 500px;
+  }
 
   &:hover {
     box-shadow: 0px 0px 1px 3px #b8875c;
@@ -47,24 +73,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 36px 0;
-}
-.services-description {
-  margin: 11px 16px 0;
+  padding: 34px 0 16px 0;
+  @media screen and (min-width: $tablet) {
+    padding: 37px 0 40px 0;
+  }
 }
 
 .services-item-title {
+  text-align: center;
   margin: 0;
 
-  font-family: Montserrat;
-  font-size: 16px;
+  font-family: 'Montserrat';
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 28px; /* 175% */
-  letter-spacing: 0.32px;
+  font-weight: 600;
+  line-height: 1.44;
+  letter-spacing: 1.26px;
   text-transform: uppercase;
 
-  text-align: center;
+  color: $primary-white-color;
 }
 
 .services-item-description {
@@ -101,28 +128,32 @@
 }
 
 .services-btn {
-  margin-top: 40px;
+  margin-top: 34px;
   background-color: transparent;
 
   display: inline-flex;
   height: 60px;
-  padding: 24px;
+  width: 320px;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 12px;
 
   border-radius: 3px;
-  border: 1px solid #b8875c;
+  border: 1px solid $primary-site-color;
 
-  color: #d9d9d9;
+  color: $border-color;
 
-  font-family: Montserrat;
-  font-size: var(--sds-typography-body-size-medium);
+  font-family: 'Montserrat';
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 100%; /* 16px */
+  font-weight: 500;
+  line-height: 1.75;
   letter-spacing: 0.32px;
   text-transform: uppercase;
+  @media screen and (min-width: $tablet) {
+    margin-top: 37px;
+    width: 335px;
+  }
 
   & .icon-btn-next {
     background-image: url('../images/icons/icon-btn-next.svg');
@@ -142,4 +173,8 @@
   &:active {
     background-color: #b8875c;
   }
+}
+
+.correction {
+  margin-top: 12px;
 }

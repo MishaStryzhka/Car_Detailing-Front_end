@@ -179,7 +179,7 @@
 
 .hard-wax-photo {
   @extend %common-img;
-  background: url(../images/hard-wax-car.png), no-repeat;
+  background: url(../images/hard-wax-mob-car.png), no-repeat;
   @media screen and (min-width: $tablet) {
     background: url(../images/hard-wax-tablet-car.png), no-repeat;
   }
@@ -190,7 +190,7 @@
 
 .polishing-photo {
   @extend %common-img;
-  background: url(../images/polishing-car.png), no-repeat;
+  background: url(../images/polishing-mob-car.png), no-repeat;
   @media screen and (min-width: $tablet) {
     background: url(../images/polishing-tablet-car.png), no-repeat;
   }
@@ -201,7 +201,7 @@
 
 .disk-restoration-photo {
   @extend %common-img;
-  background: url(../images/disk-restoration-car.png), no-repeat;
+  background: url(../images/disk-restoration-mob-car.png), no-repeat;
   @media screen and (min-width: $tablet) {
     background: url(../images/disk-restoration-tablet-car.png), no-repeat;
   }
@@ -212,7 +212,7 @@
 
 .window-tinting-photo {
   @extend %common-img;
-  background: url(../images/window-tinting-car.png), no-repeat;
+  background: url(../images/window-tinting-mob-car.png), no-repeat;
   @media screen and (min-width: $tablet) {
     background: url(../images/window-tinting-tablet-car.png), no-repeat;
   }
@@ -223,7 +223,7 @@
 
 .headlight-tinting-photo {
   @extend %common-img;
-  background: url(../images/headlight-tinting-car.png), no-repeat;
+  background: url(../images/headlight-tinting-mob-car.png), no-repeat;
   @media screen and (min-width: $tablet) {
     background: url(../images/headlight-tinting-tablet-car.png), no-repeat;
   }
@@ -234,7 +234,7 @@
 
 .ceramic-coating-photo {
   @extend %common-img;
-  background: url(../images/ceramic-coating-car.png), no-repeat;
+  background: url(../images/ceramic-coating-mob-car.png), no-repeat;
   @media screen and (min-width: $tablet) {
     background: url(../images/ceramic-coating-tablet-car.png), no-repeat;
   }

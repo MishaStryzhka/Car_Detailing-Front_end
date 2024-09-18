@@ -103,13 +103,21 @@
 %section-title {
   margin: 0;
   color: $primary-white-color;
-
+  text-transform: uppercase;
+  text-align: center;
   font-family: 'Noto Serif Display';
-  font-size: 44px;
-  font-style: normal;
+  font-size: 32px;
   font-weight: 600;
-  line-height: 56px; /* 127.273% */
-  letter-spacing: 2.2px;
+  line-height: 1.25;
+  letter-spacing: 1.6px;
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+    line-height: 1.27;
+    letter-spacing: 2.2px;
+  }
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
 }
 
 %footer-title {
