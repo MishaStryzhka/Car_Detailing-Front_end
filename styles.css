@@ -1189,7 +1189,10 @@ body .smoke-2 {
   line-height: 1.6;
   letter-spacing: 0.32px;
   text-transform: uppercase;
-  padding: 16px 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
   height: 60px;
   width: 350px;
   border-radius: 3px;
@@ -1199,13 +1202,11 @@ body .smoke-2 {
 @media screen and (min-width: 1024px) {
   .examples-box-inst_btn {
     width: 210px;
-    padding: 16px 40px;
   }
 }
 @media screen and (min-width: 1440px) {
   .examples-box-inst_btn {
     width: 296px;
-    padding: 16px 84px;
   }
 }
 
