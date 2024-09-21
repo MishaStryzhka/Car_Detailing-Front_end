@@ -54,7 +54,7 @@ body .ellipse-1 {
 body .ellipse-4 {
   position: absolute;
   top: 373px;
-  right: 1159px;
+  right: 109px;
 
   width: 582px;
   height: 582px;
@@ -67,16 +67,57 @@ body .ellipse-4 {
 
   filter: blur(80px);
   z-index: 1;
+
+  @media screen and (min-width: $tablet) {
+    right: 743px;
+  }
+  @media screen and (min-width: $desktop) {
+    right: 1159px;
+  }
+}
+body .ellipse-6 {
+  position: absolute;
+  top: 7349px;
+  right: 139px;
+
+  width: 419px;
+  height: 419px;
+  flex-shrink: 0;
+
+  border-radius: 419px;
+  opacity: var(--sds-size-stroke-border);
+
+  border-radius: 419px;
+  background: linear-gradient(74deg, rgba(167, 123, 84, 0.2) 54.36%, rgba(0, 0, 0, 0.2) 88.58%);
+
+  filter: blur(80px);
+  z-index: 1;
+
+  @media screen and (min-width: $tablet) {
+    // width: 1024px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 5487px;
+    right: 934px;
+  }
 }
 
 body .smoke-2 {
   position: absolute;
   top: 1478px;
   height: 960.117px;
-  width: 1440px;
+  width: 390px;
   // transform: rotate(-90deg);
   flex-shrink: 0;
 
   background: url('../images/smoke2.png') no-repeat;
   background-size: 1440px 960.117px;
+  background-position: center;
+
+  @media screen and (min-width: $tablet) {
+    width: 1024px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1440px;
+  }
 }

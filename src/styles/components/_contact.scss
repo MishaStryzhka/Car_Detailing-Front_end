@@ -7,17 +7,19 @@
   }
   @media screen and (min-width: $desktop) {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
   & .contact-container {
     @extend %container;
     @media screen and (min-width: $tablet) {
       padding: 0;
       display: flex;
-      gap: 78px;
+      gap: 55px;
       height: 600px;
     }
     @media screen and (min-width: $desktop) {
       gap: 246px;
+      gap: 78px;
     }
   }
 }
@@ -50,7 +52,7 @@
   }
 }
 .contact-wrap {
-  max-width: 522px;
+  width: 522px;
   padding-top: 20px;
   padding-bottom: 58px;
   margin-left: auto;
