@@ -41,7 +41,11 @@
 }
 
 .reviews-section {
-  margin-bottom: 180px;
+  margin-bottom: 100px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 180px;
+  }
 
   .reviews-title {
     color: #fff;
