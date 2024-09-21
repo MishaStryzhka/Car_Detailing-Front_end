@@ -1330,10 +1330,16 @@ body .smoke-2 {
 }
 
 .contact-second-wrap {
+  width: 350px;
   display: block;
   background: url(dd4b70a777f7b8e69cff.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (min-width: 1024px) {
+  .contact-second-wrap {
+    width: 522px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .contact-second-wrap {
@@ -1342,7 +1348,6 @@ body .smoke-2 {
 }
 
 .contact-wrap {
-  width: 522px;
   padding-top: 20px;
   padding-bottom: 58px;
   margin-left: auto;
@@ -1457,7 +1462,12 @@ body .smoke-2 {
 }
 
 .reviews-section {
-  margin-bottom: 180px;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .reviews-section {
+    margin-bottom: 180px;
+  }
 }
 .reviews-section .reviews-title {
   color: #fff;
