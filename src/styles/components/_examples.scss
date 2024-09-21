@@ -50,7 +50,7 @@
 }
 
 .examples-box-inst {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -120,5 +120,16 @@
   margin-top: 40px;
   @media screen and (min-width: $tablet) {
     display: none;
+  }
+
+  swiper-container::part(button-prev),
+  swiper-container::part(button-next) {
+    @media screen and (max-width: $max-mobile) {
+      display: none;
+    }
+  }
+
+  swiper-container::part(wrapper) {
+    padding-bottom: 28px;
   }
 }

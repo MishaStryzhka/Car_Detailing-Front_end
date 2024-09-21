@@ -3,12 +3,9 @@
 
   @media screen and (min-width: $tablet) {
     margin-top: 100px;
-    background: url(../images/bg-advantages.png) no-repeat;
-    background-position: -50px 0;
   }
   @media screen and (min-width: $desktop) {
     margin-top: 120px;
-    background-position: 250px 0;
   }
 
   & .container {
@@ -125,6 +122,15 @@
   margin-top: 24px;
   @media screen and (min-width: $tablet) {
     display: none;
+  }
+
+  swiper-container::part(button-prev),
+  swiper-container::part(button-next) {
+    display: none;
+  }
+
+  swiper-container::part(wrapper) {
+    padding: 0 12px 24px;
   }
 }
 
