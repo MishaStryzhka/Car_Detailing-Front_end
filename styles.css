@@ -272,7 +272,7 @@ summary {
   text-decoration: none;
 }
 
-.prices-section, .container-adventiges-services, .hand-wash .hand-wash-container, .footer .footer-container, .work-examples .container, .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash, .contact .contact-container, .examples .examples-container, .services-container, .advantages .container, .about-us .container, .hero .container, .header__container {
+.prices-section, .container-adventiges-services, .hand-wash .hand-wash-container, .footer .footer-container, .work-examples .container, .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash, .reviews-section .reviews-container, .contact .contact-container, .examples .examples-container, .services-container, .advantages .container, .about-us .container, .hero .container, .header__container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -280,19 +280,19 @@ summary {
   box-sizing: border-box;
 }
 @media screen and (min-width: 390px) {
-  .prices-section, .container-adventiges-services, .hand-wash .hand-wash-container, .footer .footer-container, .work-examples .container, .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash, .contact .contact-container, .examples .examples-container, .services-container, .advantages .container, .about-us .container, .hero .container, .header__container {
+  .prices-section, .container-adventiges-services, .hand-wash .hand-wash-container, .footer .footer-container, .work-examples .container, .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash, .reviews-section .reviews-container, .contact .contact-container, .examples .examples-container, .services-container, .advantages .container, .about-us .container, .hero .container, .header__container {
     width: 390px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .prices-section, .container-adventiges-services, .hand-wash .hand-wash-container, .footer .footer-container, .work-examples .container, .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash, .contact .contact-container, .examples .examples-container, .services-container, .advantages .container, .about-us .container, .hero .container, .header__container {
+  .prices-section, .container-adventiges-services, .hand-wash .hand-wash-container, .footer .footer-container, .work-examples .container, .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash, .reviews-section .reviews-container, .contact .contact-container, .examples .examples-container, .services-container, .advantages .container, .about-us .container, .hero .container, .header__container {
     width: 1024px;
     padding-left: 60px;
     padding-right: 60px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .prices-section, .container-adventiges-services, .hand-wash .hand-wash-container, .footer .footer-container, .work-examples .container, .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash, .contact .contact-container, .examples .examples-container, .services-container, .advantages .container, .about-us .container, .hero .container, .header__container {
+  .prices-section, .container-adventiges-services, .hand-wash .hand-wash-container, .footer .footer-container, .work-examples .container, .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash, .reviews-section .reviews-container, .contact .contact-container, .examples .examples-container, .services-container, .advantages .container, .about-us .container, .hero .container, .header__container {
     width: 1440px;
     padding-left: 80px;
     padding-right: 80px;
@@ -413,7 +413,7 @@ body .ellipse-1 {
 body .ellipse-4 {
   position: absolute;
   top: 373px;
-  right: 1159px;
+  right: 109px;
   width: 582px;
   height: 582px;
   flex-shrink: 0;
@@ -423,15 +423,57 @@ body .ellipse-4 {
   filter: blur(80px);
   z-index: 1;
 }
+@media screen and (min-width: 1024px) {
+  body .ellipse-4 {
+    right: 743px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .ellipse-4 {
+    right: 1159px;
+  }
+}
+
+body .ellipse-6 {
+  position: absolute;
+  top: 7349px;
+  right: 139px;
+  width: 419px;
+  height: 419px;
+  flex-shrink: 0;
+  border-radius: 419px;
+  opacity: var(--sds-size-stroke-border);
+  border-radius: 419px;
+  background: linear-gradient(74deg, rgba(167, 123, 84, 0.2) 54.36%, rgba(0, 0, 0, 0.2) 88.58%);
+  filter: blur(80px);
+  z-index: 1;
+}
+@media screen and (min-width: 1440px) {
+  body .ellipse-6 {
+    top: 5487px;
+    right: 934px;
+  }
+}
 
 body .smoke-2 {
   position: absolute;
   top: 1478px;
   height: 960.117px;
-  width: 1440px;
+  width: 390px;
   flex-shrink: 0;
   background: url(e1268bec4c0c89c5bcc5.png) no-repeat;
   background-size: 1440px 960.117px;
+  background-position: center;
+}
+@media screen and (min-width: 1024px) {
+  body .smoke-2 {
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .smoke-2 {
+    width: 1440px;
+  }
 }
 
 .header__container {
@@ -803,14 +845,11 @@ body .smoke-2 {
 @media screen and (min-width: 1024px) {
   .advantages {
     margin-top: 100px;
-    background: url(892d562e533511307a6a.png) no-repeat;
-    background-position: -50px 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .advantages {
     margin-top: 120px;
-    background-position: 250px 0;
   }
 }
 .advantages-title {
@@ -931,6 +970,13 @@ body .smoke-2 {
   .wrap-swiper {
     display: none;
   }
+}
+.wrap-swiper swiper-container::part(button-prev),
+.wrap-swiper swiper-container::part(button-next) {
+  display: none;
+}
+.wrap-swiper swiper-container::part(wrapper) {
+  padding: 0 12px 24px;
 }
 
 .advantages-swiper-list {
@@ -1155,7 +1201,7 @@ body .smoke-2 {
 }
 
 .examples-box-inst {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1228,6 +1274,15 @@ body .smoke-2 {
     display: none;
   }
 }
+@media screen and (max-width: 1023px) {
+  .wrap-mobile-list swiper-container::part(button-prev),
+  .wrap-mobile-list swiper-container::part(button-next) {
+    display: none;
+  }
+}
+.wrap-mobile-list swiper-container::part(wrapper) {
+  padding-bottom: 28px;
+}
 
 .contact {
   padding-top: 80px;
@@ -1242,19 +1297,21 @@ body .smoke-2 {
 @media screen and (min-width: 1440px) {
   .contact {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 @media screen and (min-width: 1024px) {
   .contact .contact-container {
     padding: 0;
     display: flex;
-    gap: 78px;
+    gap: 55px;
     height: 600px;
   }
 }
 @media screen and (min-width: 1440px) {
   .contact .contact-container {
     gap: 246px;
+    gap: 78px;
   }
 }
 
@@ -1285,7 +1342,7 @@ body .smoke-2 {
 }
 
 .contact-wrap {
-  max-width: 522px;
+  width: 522px;
   padding-top: 20px;
   padding-bottom: 58px;
   margin-left: auto;
@@ -1365,6 +1422,74 @@ body .smoke-2 {
 }
 .form-btn:active {
   background-color: #b8875c;
+}
+
+.reviews-section swiper-container::part(container) {
+  box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .reviews-section swiper-container::part(container) {
+    padding: 0 84px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-section swiper-container::part(container) {
+    padding: 0 84px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .reviews-section swiper-container::part(button-prev),
+  .reviews-section swiper-container::part(button-next) {
+    display: none;
+  }
+}
+.reviews-section .reviews-container .reviews-swiper swiper-slide {
+  height: 267px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 5px;
+  background: #111314;
+  backdrop-filter: blur(85.4000015259px);
+}
+
+.reviews-section {
+  margin-bottom: 180px;
+}
+.reviews-section .reviews-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.reviews-section .swiper-container .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+.reviews-section .swiper-container .review .reviewer {
+  display: flex;
+  align-items: center;
+}
+.reviews-section .swiper-container .review .reviewer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.reviews-section .swiper-container .review .review-content {
+  text-align: center;
+}
+.reviews-section .swiper-container .review .review-content .review-rating {
+  color: #f0c14b;
+}
+.reviews-section .swiper-container .review .review-content .review-body {
+  color: #ccc;
 }
 
 .container-headlight-tinting, .container-window-tinting, .container-ceramic-coating, .container-disk-restoration, .container-polishing, .container-hard-wax, .container-dry-cleaning, .container-hand-wash {

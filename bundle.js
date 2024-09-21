@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_setlanguage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/setlanguage */ \"./src/js/setlanguage.js\");\n/* harmony import */ var _js_setlanguage__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_setlanguage__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_burger_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/burger-menu */ \"./src/js/burger-menu.js\");\n/* harmony import */ var _js_burger_menu__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_burger_menu__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n\n\n\n\n//# sourceURL=webpack://car_detailing-front_end/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_setlanguage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/setlanguage */ \"./src/js/setlanguage.js\");\n/* harmony import */ var _js_setlanguage__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_setlanguage__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_burger_menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/burger-menu */ \"./src/js/burger-menu.js\");\n/* harmony import */ var _js_burger_menu__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_burger_menu__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n/* harmony import */ var _js_setParamsReviewsSwiper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/setParamsReviewsSwiper */ \"./src/js/setParamsReviewsSwiper.js\");\n/* harmony import */ var _js_setParamsReviewsSwiper__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_setParamsReviewsSwiper__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack://car_detailing-front_end/./src/index.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
 /***/ (() => {
 
 eval("(function () {\n  var refs = {\n    openMenuBtn: document.querySelector('[data-menu-open]'),\n    closeMenuBtn: document.querySelector('[data-menu-close]'),\n    menu: document.querySelector('[data-menu]')\n    // body: document.querySelector('body'),\n  };\n  refs.openMenuBtn.addEventListener('click', toggleMenu);\n  refs.closeMenuBtn.addEventListener('click', toggleMenu);\n  function toggleMenu() {\n    refs.menu.classList.toggle('is-hidden');\n    // refs.body.classList.toggle('no-scroll');\n  }\n})();\n\n//# sourceURL=webpack://car_detailing-front_end/./src/js/burger-menu.js?");
+
+/***/ }),
+
+/***/ "./src/js/setParamsReviewsSwiper.js":
+/*!******************************************!*\
+  !*** ./src/js/setParamsReviewsSwiper.js ***!
+  \******************************************/
+/***/ (() => {
+
+eval("var swiperEl = document.querySelector('.reviews-swiper');\nif (swiperEl) {\n  // swiper parameters\n  var swiperParams = {\n    slidesPerView: 1,\n    breakpoints: {\n      390: {\n        slidesPerView: 1\n      },\n      1024: {\n        slidesPerView: 2\n      },\n      1440: {\n        slidesPerView: 3\n      }\n    }\n  };\n\n  // now we need to assign all parameters to Swiper element\n  Object.assign(swiperEl, swiperParams);\n\n  // and now initialize it\n  swiperEl.initialize();\n}\n\n//# sourceURL=webpack://car_detailing-front_end/./src/js/setParamsReviewsSwiper.js?");
 
 /***/ }),
 
