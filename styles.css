@@ -2478,6 +2478,8 @@ swiper-container::part(bullet-active) {
   top: 0;
   z-index: 1;
   transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
 }
 
 .site-nav-burger-menu {
@@ -2546,4 +2548,5 @@ swiper-container::part(bullet-active) {
 .is-hidden {
   opacity: 0;
   transform: translateX(-100%);
+  visibility: hidden;
 }
