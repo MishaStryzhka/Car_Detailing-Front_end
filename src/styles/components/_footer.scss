@@ -63,7 +63,7 @@
 
 .footer-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 4.1vw;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0.02em;
@@ -72,6 +72,9 @@
   margin: 0;
 
   color: $text-neutral-on-neutral-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }
 
 .title-menu {
@@ -80,7 +83,7 @@
 
 .footer-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 4.1vw;
   font-weight: 300;
   line-height: 26px;
   letter-spacing: 0.02em;
@@ -88,6 +91,9 @@
   margin: 0;
 
   color: $text-neutral-on-neutral-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }
 
 .footer-list {

@@ -38,7 +38,7 @@
 
   /* Main text */
   font-family: 'Montserrat';
-  font-size: 16px;
+  font-size: 4.1vw;
   font-style: normal;
   font-weight: 300;
   line-height: 1.75;
@@ -46,7 +46,9 @@
 
   text-align: center;
   color: $secondary-white-color;
-
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
   @media screen and (min-width: $tablet) {
     margin-top: 40px;
   }
@@ -103,7 +105,7 @@
 
 .features-title {
   font-family: 'Noto Serif Display';
-  font-size: 22px;
+  font-size: 5.6vw;
   font-style: normal;
   font-weight: 600;
   line-height: 36px;
@@ -111,6 +113,10 @@
   text-align: center;
 
   color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 22px;
+  }
+
   @media screen and (min-width: $tablet) {
     margin: 24px 0 16px 0;
   }
@@ -118,7 +124,7 @@
 
 .features-text {
   font-family: 'Montserrat';
-  font-size: 16px;
+  font-size: 4.1vw;
   font-style: normal;
   font-weight: 300;
   line-height: 1.75;
@@ -126,4 +132,7 @@
   margin: 0;
 
   text-align: center;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }

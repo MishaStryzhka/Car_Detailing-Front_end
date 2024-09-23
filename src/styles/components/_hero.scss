@@ -39,7 +39,7 @@
   margin: 0;
 
   font-family: 'Noto Serif Display';
-  font-size: 48px;
+  font-size: 12.3vw;
   font-style: normal;
   font-weight: 700;
   line-height: 1;
@@ -51,6 +51,9 @@
   pointer-events: none;
 
   color: $primary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 48px;
+  }
 
   @media screen and (min-width: $tablet) {
     font-size: 80px;
