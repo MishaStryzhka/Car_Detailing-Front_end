@@ -37,7 +37,11 @@
 
 .container-ceramic-coating {
   @extend %common-container;
+
   background-image: url(../images/bg-photo-ceramic-coating.png);
+  @media screen and (max-width: $max-mobile) {
+    height: 1124px;
+  }
 }
 
 .container-window-tinting {
@@ -57,13 +61,16 @@
   // margin-top: 116px;
 
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 3.6vw;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.01em;
 
   color: $border-color;
   text-decoration: none;
+  @media screen and (min-width: $mobile) {
+    font-size: 14px;
+  }
 }
 
 .icon-btn-next {
@@ -101,7 +108,7 @@
   //   font-size: 8.2vw;
   // }
   font-family: 'Noto Serif Display';
-  font-size: 32px;
+  font-size: 8.2vw;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: 0.06em;
@@ -110,6 +117,9 @@
   margin-bottom: 40px;
 
   color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 32px;
+  }
   @media screen and (min-width: $desktop) {
     font-size: 44px;
     line-height: 1.27;
@@ -122,11 +132,8 @@
 }
 
 .type-services-description {
-  // @media screen and (max-width: 389.5px) {
-  //   font-size: 4.1vw;
-  // }
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 4.1vw;
   font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0.01em;
@@ -135,6 +142,9 @@
   margin-bottom: 16px;
 
   color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }
 
 %common-img {

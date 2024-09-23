@@ -11,9 +11,8 @@
 }
 
 .site-nav__item {
-  font-family: Montserrat;
-  font-size: 16px;
-  font-style: normal;
+  font-family: 'Montserrat';
+  font-size: 4.1vw;
   font-weight: 500;
   line-height: 28px; /* 175% */
   letter-spacing: 0.32px;
@@ -29,20 +28,9 @@
       color: $primary-site-color;
     }
   }
-
-  //   &:not(:last-child) {
-  //     @media screen and (max-width: 767px) {
-  //       margin-bottom: 32px;
-  //     }
-
-  //     @media screen and (min-width: $tablet) {
-  //       margin-right: 50px;
-  //     }
-  //   }
-
-  //   @media screen and (min-width: $tablet) {
-  //     position: relative;
-  //   }
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }
 
 .site-nav__link {

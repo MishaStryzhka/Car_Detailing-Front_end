@@ -53,12 +53,15 @@
 
 .title-link-burger-menu {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 4.1vw;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0.02em;
   text-align: left;
   text-transform: uppercase;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }
 
 .link-burger-menu {

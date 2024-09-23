@@ -59,16 +59,19 @@
 
 .contact-title {
   font-family: 'Noto Serif Display';
-  font-size: 22px;
+  font-size: 5.6vw;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.07em;
   text-align: center;
+  @media screen and (min-width: $mobile) {
+    font-size: 22px;
+  }
 }
 
 .contact-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 4.1vw;
   font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0.16px;
@@ -78,6 +81,9 @@
   text-align: center;
 
   color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }
 
 .contact-form {
@@ -87,7 +93,7 @@
   & input,
   & textarea {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 3.6vw;
     font-weight: 300;
     line-height: 1.7;
 
@@ -101,6 +107,9 @@
     border-radius: 5px;
     & ::placeholder {
       color: rgba(255, 255, 255, 0.5);
+    }
+    @media screen and (min-width: $mobile) {
+      font-size: 14px;
     }
   }
 }
@@ -126,7 +135,7 @@
   color: $border-color;
 
   font-family: 'Montserrat', sans-serif;
-  font-size: var(--sds-typography-body-size-medium);
+  font-size: 4.1vw;
   font-style: normal;
   font-weight: 600;
   line-height: 100%; /* 16px */
@@ -141,5 +150,8 @@
   }
   &:active {
     background-color: #b8875c;
+  }
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
   }
 }

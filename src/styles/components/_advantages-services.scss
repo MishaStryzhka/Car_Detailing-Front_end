@@ -1,43 +1,66 @@
 .section-adventiges-services {
-  padding: 64px 0 28px;
-}
-
-.container-adventiges-services {
+  padding: 74px 0 40px;
   @extend %container;
+  @media screen and (min-width: $tablet) {
+    padding: 64px 0 28px;
+  }
 }
 
 .adventiges-services-title {
   font-family: 'Noto Serif Display';
-  font-size: 44px;
+  font-size: 5.6vw;
   font-weight: 600;
-  line-height: 56px;
-  letter-spacing: 0.05em;
+  line-height: 36px;
+  letter-spacing: 0.07em;
   text-align: center;
   margin: 0;
   margin-bottom: 40px;
 
   color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+    line-height: 56px;
+
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+  }
 }
 
 .advantages-services-list {
   display: flex;
   @extend %list;
-  gap: 20px;
-  justify-content: center;
+  gap: 64px;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+  }
 }
 
 .advantages-services-item {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: 413px;
+  justify-content: center;
+  width: 290px;
+  @media screen and (min-width: $desktop) {
+    width: 413px;
+  }
 }
 
 .advantages-services-item_title {
   text-transform: uppercase;
 
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 4.6vw;
   font-weight: 600;
   line-height: 26px;
   letter-spacing: 0.07em;
@@ -47,11 +70,14 @@
   margin-bottom: 16px;
 
   color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 18px;
+  }
 }
 
 .advantages-services-item_text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 4.1vw;
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.01em;
@@ -59,6 +85,9 @@
   margin: 0;
 
   color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
 }
 
 %icon {
@@ -80,6 +109,31 @@
   background-image: url('../images/icons/design.svg');
 }
 
+.icon-stars {
+  @extend %icon;
+  background-image: url('../images/icons/icon-stars.svg');
+}
+.icon-water {
+  @extend %icon;
+  background-image: url('../images/icons/icon-water.svg');
+}
+.icon-uv {
+  @extend %icon;
+  background-image: url('../images/icons/icon-uv.svg');
+}
+.icon-flask {
+  @extend %icon;
+  background-image: url('../images/icons/icon-flask.svg');
+}
+.icon-scratch {
+  @extend %icon;
+  background-image: url('../images/icons/icon-scratch.svg');
+}
+.icon-time {
+  @extend %icon;
+  background-image: url('../images/icons/icon-time.svg');
+}
+
 .icon-protection {
   @extend %icon;
   background-image: url('../images/icons/protection.svg');
@@ -91,10 +145,23 @@
 
 .advantages-services-ceramic-list {
   @extend %list;
-  display: grid;
-  grid-template-columns: repeat(3, 413px); /* 3 стовпці рівної ширини */
-  grid-template-rows: repeat(2, 1fr); /* 2 рядки */
-  column-gap: 20px; /* Відступ між стовпцями */
-  row-gap: 64px; /* Відступ між рядками */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(3, 290px); /* 3 стовпці рівної ширини */
+    grid-template-rows: repeat(2, 1fr); /* 2 рядки */
+    column-gap: 16px; /* Відступ між стовпцями */
+    row-gap: 40px; /* Відступ між рядками */
+  }
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: repeat(3, 413px); /* 3 стовпці рівної ширини */
+    column-gap: 20px; /* Відступ між стовпцями */
+    row-gap: 64px; /* Відступ між рядками */
+  }
 }
