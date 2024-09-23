@@ -11,8 +11,9 @@
   }
   & .contact-container {
     @extend %container;
+    padding: 0;
+
     @media screen and (min-width: $tablet) {
-      padding: 0;
       display: flex;
       gap: 55px;
       height: 600px;
@@ -41,27 +42,33 @@
   }
 }
 .contact-second-wrap {
-  width: 350px;
+  width: 390px;
 
   display: block;
   background: url(../images/photo-bg-form.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @media screen and (min-width: $tablet) {
-    width: 522px;
+    width: 654px;
+    background-position: left;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 1020px;
+    width: 1064px;
   }
 }
 .contact-wrap {
-  // width: 522px;
+  width: 350px;
   padding-top: 20px;
   padding-bottom: 58px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    width: 522px;
+  }
 }
 
 .contact-title {
