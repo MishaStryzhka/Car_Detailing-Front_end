@@ -1377,9 +1377,11 @@ body .smoke-2 {
     padding-bottom: 120px;
   }
 }
+.contact .contact-container {
+  padding: 0;
+}
 @media screen and (min-width: 1024px) {
   .contact .contact-container {
-    padding: 0;
     display: flex;
     gap: 55px;
     height: 600px;
@@ -1407,28 +1409,36 @@ body .smoke-2 {
 }
 
 .contact-second-wrap {
-  width: 350px;
+  width: 390px;
   display: block;
   background: url(dd4b70a777f7b8e69cff.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media screen and (min-width: 1024px) {
   .contact-second-wrap {
-    width: 522px;
+    width: 654px;
+    background-position: left;
   }
 }
 @media screen and (min-width: 1440px) {
   .contact-second-wrap {
-    width: 1020px;
+    width: 1064px;
   }
 }
 
 .contact-wrap {
+  width: 350px;
   padding-top: 20px;
   padding-bottom: 58px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1024px) {
+  .contact-wrap {
+    width: 522px;
+  }
 }
 
 .contact-title {
