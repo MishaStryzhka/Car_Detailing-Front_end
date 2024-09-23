@@ -85,7 +85,6 @@ body .ellipse-6 {
   flex-shrink: 0;
 
   border-radius: 419px;
-  opacity: var(--sds-size-stroke-border);
 
   border-radius: 419px;
   background: linear-gradient(74deg, rgba(167, 123, 84, 0.2) 54.36%, rgba(0, 0, 0, 0.2) 88.58%);
@@ -120,4 +119,8 @@ body .smoke-2 {
   @media screen and (min-width: $desktop) {
     width: 1440px;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
