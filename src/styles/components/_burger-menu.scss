@@ -17,6 +17,8 @@
   @extend %transition-default;
 
   transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
 }
 
 .site-nav-burger-menu {
@@ -84,4 +86,5 @@
 .is-hidden {
   opacity: 0;
   transform: translateX(-100%);
+  visibility: hidden;
 }
