@@ -50,7 +50,7 @@
 }
 
 .examples-box-inst {
-  margin-top: 80px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -100,11 +100,12 @@
   line-height: 1.6;
   letter-spacing: 0.32px;
   text-transform: uppercase;
-
-  // padding: 16px 110px;
+  
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  gap: 6px;
+  
   height: 60px;
   width: 89.7vw;
 
@@ -118,11 +119,9 @@
   }
   @media screen and (min-width: $tablet) {
     width: 210px;
-    padding: 16px 40px;
   }
   @media screen and (min-width: $desktop) {
     width: 296px;
-    padding: 16px 84px;
   }
 }
 
@@ -130,5 +129,16 @@
   margin-top: 40px;
   @media screen and (min-width: $tablet) {
     display: none;
+  }
+
+  swiper-container::part(button-prev),
+  swiper-container::part(button-next) {
+    @media screen and (max-width: $max-mobile) {
+      display: none;
+    }
+  }
+
+  swiper-container::part(wrapper) {
+    padding-bottom: 28px;
   }
 }

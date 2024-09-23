@@ -19,378 +19,385 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <!-- header -->
-    <%= require('html-loader!./partials/header.html').default %>
+    <div class="body-container">
+      <div class="ellipse-1"></div>
+      <div class="ellipse-4"></div>
+      <div class="ellipse-6"></div>
+      <div class="smoke-2"></div>
+      <!-- header -->
+      <%= require('html-loader!./partials/header.html').default %>
 
-    <section id="hero" class="hero">
-      <div class="container">
-        <h1 class="hero-title">
-          <span>Vip Car</span><span class="hero-description">Detailing</span>
-        </h1>
-        <div class="hero-smoke"></div>
-      </div>
-    </section>
+      <section id="hero" class="hero">
+        <div class="container">
+          <h1 class="hero-title">
+            <span>Vip Car</span><span class="hero-description">Detailing</span>
+          </h1>
+          <div class="hero-smoke"></div>
+        </div>
+      </section>
 
-    <section id="about-us" class="about-us">
-      <div class="container">
-        <ul class="features">
-          <li class="features-item">
-            <div class="features-icon icon-polish"></div>
-            <h3 class="features-title">Leštění automobilu</h3>
-            <p class="features-text">
-              Dodá vašemu vozu hluboký, zrcadlový lesk a ochranu proti vnějším vlivům!
-            </p>
-          </li>
-          <li class="features-item">
-            <div class="features-icon icon-ceramic"></div>
-            <h3 class="features-title">Keramická ochrana</h3>
-            <p class="features-text">
-              Zajišťuje nejspolehlivější ochranu proti všem nepříznivým vlivům!
-            </p>
-          </li>
-          <li class="features-item">
-            <div class="features-icon icon-colors"></div>
-            <h3 class="features-title">Tónování automobilu</h3>
-            <p class="features-text">
-              Tónování oken a světel – to je styl, pohodlí a bezpečnost pro váš vůz!
-            </p>
-          </li>
-        </ul>
-        <div class="about-us_header">
-          <div class="about-us_description">
-            <h2 class="about-us_title">O nás</h2>
-            <p class="about-us_text">
-              VIP Car Detailing je profesionální autodetailing v Praze, který pracuje s luxusními i
-              běžnými vozy. Naše ceny jsou dostupné a kvalitu našich služeb oceňují stovky
-              spokojených zákazníků. Nabízíme širokou škálu služeb, od standardního mytí po
-              kompletní detailing. Svěřte svůj vůz nám – uděláme ho čistým, lesklým a jako nový!
-            </p>
+      <section id="about-us" class="about-us">
+        <div class="container">
+          <ul class="features">
+            <li class="features-item">
+              <div class="features-icon icon-polish"></div>
+              <h3 class="features-title">Leštění automobilu</h3>
+              <p class="features-text">
+                Dodá vašemu vozu hluboký, zrcadlový lesk a ochranu proti vnějším vlivům!
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon icon-ceramic"></div>
+              <h3 class="features-title">Keramická ochrana</h3>
+              <p class="features-text">
+                Zajišťuje nejspolehlivější ochranu proti všem nepříznivým vlivům!
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon icon-colors"></div>
+              <h3 class="features-title">Tónování automobilu</h3>
+              <p class="features-text">
+                Tónování oken a světel – to je styl, pohodlí a bezpečnost pro váš vůz!
+              </p>
+            </li>
+          </ul>
+          <div class="about-us_header">
+            <div class="about-us_description">
+              <h2 class="about-us_title">O nás</h2>
+              <p class="about-us_text">
+                VIP Car Detailing je profesionální autodetailing v Praze, který pracuje s luxusními
+                i běžnými vozy. Naše ceny jsou dostupné a kvalitu našich služeb oceňují stovky
+                spokojených zákazníků. Nabízíme širokou škálu služeb, od standardního mytí po
+                kompletní detailing. Svěřte svůj vůz nám – uděláme ho čistým, lesklým a jako nový!
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="advantages" class="advantages">
-      <div class="container">
-        <h2 class="advantages-title">Výhody VIP Car Detailing</h2>
-        <div class="wrap-swiper">
-          <swiper-container
-            navigation="true"
-            pagination="true"
-            pagination-clickable="true"
-            space-between="40"
-            slides-per-view="1.5"
-          >
-            <swiper-slide class="advantages-swiper-list">
+      <section id="advantages" class="advantages">
+        <div class="container">
+          <h2 class="advantages-title">Výhody VIP Car Detailing</h2>
+          <div class="wrap-swiper">
+            <swiper-container
+              navigation="true"
+              pagination="true"
+              pagination-clickable="true"
+              space-between="40"
+              slides-per-view="1.3"
+              autoplay-delay="4000"
+              autoplay-disable-on-interaction="false"
+            >
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-professionalism"></div>
+                <div>
+                  <h3 class="advantages-item_title">Profesionalita a zkušenosti</h3>
+                  <p class="advantages-item_text">
+                    Náš tým je složen ze zkušených profesionálů s hlubokými znalostmi v oblasti
+                    autodetailingu. Pracujeme s nejlepšími materiály a vybavením, abychom zajistili
+                    nejvyšší kvalitu našich služeb.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-complex"></div>
+                <div>
+                  <h3 class="advantages-item_title">Komplexní přístup</h3>
+                  <p class="advantages-item_text">
+                    Nabízíme komplexní péči o váš vůz, od venkovního detailingu až po čištění
+                    interiéru. U nás najdete všechny potřebné služby, abyste svůj vůz uvedli do
+                    dokonalého stavu.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-material"></div>
+                <div>
+                  <h3 class="advantages-item_title">Vysoce kvalitní materiály</h3>
+                  <p class="advantages-item_text">
+                    Používáme pouze ty nejlepší materiály od renomovaných výrobců: Koch.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-individual"></div>
+                <div>
+                  <h3 class="advantages-item_title">Individuální přístup</h3>
+                  <p class="advantages-item_text">
+                    Víme, že každý vůz je jedinečný. Proto nabízíme individuální přístup každému
+                    zákazníkovi a připravujeme plán detailingu, který zohledňuje jeho speciální
+                    potřeby.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-service"></div>
+                <div>
+                  <h3 class="advantages-item_title">Pohodlný servis</h3>
+                  <p class="advantages-item_text">
+                    Chápeme, že váš čas je cenný. Proto nabízíme pohodlnou pracovní dobu a možnost
+                    objednat si službu pick-up/delivery, abyste ušetřili svůj čas.
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide class="advantages-swiper-list">
+                <div class="advantages-icon icon-garantee"></div>
+                <div>
+                  <h3 class="advantages-item_title">Záruka kvality</h3>
+                  <p class="advantages-item_text">
+                    Jsme si jistí kvalitou našich služeb a poskytujeme záruku na všechny práce.
+                    Můžete si být jisti, že váš vůz bude v dokonalém stavu.
+                  </p>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+          <ul class="advantage-list">
+            <li class="advantages-item">
               <div class="advantages-icon icon-professionalism"></div>
               <div>
                 <h3 class="advantages-item_title">Profesionalita a zkušenosti</h3>
                 <p class="advantages-item_text">
-                  Náš tým je složen ze zkušených profesionálů s hlubokými znalostmi v oblasti
+                  Náš tým tvoří zkušení profesionálové s hlubokými znalostmi v oblasti
                   autodetailingu. Pracujeme s nejlepšími materiály a vybavením, abychom zajistili
                   nejvyšší kvalitu našich služeb.
                 </p>
               </div>
-            </swiper-slide>
-            <swiper-slide class="advantages-swiper-list">
+            </li>
+            <li class="advantages-item">
               <div class="advantages-icon icon-complex"></div>
               <div>
                 <h3 class="advantages-item_title">Komplexní přístup</h3>
                 <p class="advantages-item_text">
-                  Nabízíme komplexní péči o váš vůz, od venkovního detailingu až po čištění
-                  interiéru. U nás najdete všechny potřebné služby, abyste svůj vůz uvedli do
-                  dokonalého stavu.
+                  Nabízíme komplexní péči o váš vůz, od vnějšího detailingu až po čištění interiéru.
+                  U nás najdete všechny potřebné služby pro dokonalý vzhled vašeho automobilu.
                 </p>
               </div>
-            </swiper-slide>
-            <swiper-slide class="advantages-swiper-list">
+            </li>
+            <li class="advantages-item">
               <div class="advantages-icon icon-material"></div>
               <div>
-                <h3 class="advantages-item_title">Vysoce kvalitní materiály</h3>
+                <h3 class="advantages-item_title">Kvalitní materiály</h3>
                 <p class="advantages-item_text">
-                  Používáme pouze ty nejlepší materiály od renomovaných výrobců: Koch.
+                  Používáme jen ty nejlepší materiály od renomovaných výrobců: Koch.
                 </p>
               </div>
-            </swiper-slide>
-            <swiper-slide class="advantages-swiper-list">
+            </li>
+            <li class="advantages-item">
               <div class="advantages-icon icon-individual"></div>
               <div>
                 <h3 class="advantages-item_title">Individuální přístup</h3>
                 <p class="advantages-item_text">
-                  Víme, že každý vůz je jedinečný. Proto nabízíme individuální přístup každému
-                  zákazníkovi a připravujeme plán detailingu, který zohledňuje jeho speciální
-                  potřeby.
+                  Každý automobil je unikátní. Proto nabízíme individuální přístup a připravujeme
+                  plán detailingu podle vašich specifických potřeb.
                 </p>
               </div>
-            </swiper-slide>
-            <swiper-slide class="advantages-swiper-list">
+            </li>
+            <li class="advantages-item">
               <div class="advantages-icon icon-service"></div>
               <div>
-                <h3 class="advantages-item_title">Pohodlný servis</h3>
+                <h3 class="advantages-item_title">Pohodlné služby</h3>
                 <p class="advantages-item_text">
-                  Chápeme, že váš čas je cenný. Proto nabízíme pohodlnou pracovní dobu a možnost
-                  objednat si službu pick-up/delivery, abyste ušetřili svůj čas.
+                  Chápeme, že váš čas je cenný. Nabízíme flexibilní pracovní dobu a možnost objednat
+                  si službu pick-up/delivery, abyste ušetřili čas.
                 </p>
               </div>
-            </swiper-slide>
-            <swiper-slide class="advantages-swiper-list">
+            </li>
+            <li class="advantages-item">
               <div class="advantages-icon icon-garantee"></div>
               <div>
                 <h3 class="advantages-item_title">Záruka kvality</h3>
                 <p class="advantages-item_text">
-                  Jsme si jistí kvalitou našich služeb a poskytujeme záruku na všechny práce. Můžete
-                  si být jisti, že váš vůz bude v dokonalém stavu.
+                  Jsme si jisti kvalitou našich služeb a poskytujeme záruku na všechny druhy prací.
+                  Můžete si být jisti, že váš automobil bude v perfektním stavu.
                 </p>
               </div>
-            </swiper-slide>
-          </swiper-container>
+            </li>
+          </ul>
         </div>
-        <ul class="advantage-list">
-          <li class="advantages-item">
-            <div class="advantages-icon icon-professionalism"></div>
-            <div>
-              <h3 class="advantages-item_title">Profesionalita a zkušenosti</h3>
-              <p class="advantages-item_text">
-                Náš tým tvoří zkušení profesionálové s hlubokými znalostmi v oblasti autodetailingu.
-                Pracujeme s nejlepšími materiály a vybavením, abychom zajistili nejvyšší kvalitu
-                našich služeb.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-complex"></div>
-            <div>
-              <h3 class="advantages-item_title">Komplexní přístup</h3>
-              <p class="advantages-item_text">
-                Nabízíme komplexní péči o váš vůz, od vnějšího detailingu až po čištění interiéru. U
-                nás najdete všechny potřebné služby pro dokonalý vzhled vašeho automobilu.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-material"></div>
-            <div>
-              <h3 class="advantages-item_title">Kvalitní materiály</h3>
-              <p class="advantages-item_text">
-                Používáme jen ty nejlepší materiály od renomovaných výrobců: Koch.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-individual"></div>
-            <div>
-              <h3 class="advantages-item_title">Individuální přístup</h3>
-              <p class="advantages-item_text">
-                Každý automobil je unikátní. Proto nabízíme individuální přístup a připravujeme plán
-                detailingu podle vašich specifických potřeb.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-service"></div>
-            <div>
-              <h3 class="advantages-item_title">Pohodlné služby</h3>
-              <p class="advantages-item_text">
-                Chápeme, že váš čas je cenný. Nabízíme flexibilní pracovní dobu a možnost objednat
-                si službu pick-up/delivery, abyste ušetřili čas.
-              </p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-icon icon-garantee"></div>
-            <div>
-              <h3 class="advantages-item_title">Záruka kvality</h3>
-              <p class="advantages-item_text">
-                Jsme si jisti kvalitou našich služeb a poskytujeme záruku na všechny druhy prací.
-                Můžete si být jisti, že váš automobil bude v perfektním stavu.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+      </section>
 
-    <section id="services" class="services">
-      <div class="services-container">
-        <h2 class="services-title">Naše služby</h2>
-        <ul class="service-list">
-          <li class="services-item">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../images/img/services-img/services-car-1.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="../images/img/services-img/services-car-mob-1.jpg"
-              />
-              <img src="../images/img/services-img/services-car-1.jpg" alt="Služba 1" />
-            </picture>
-            <div class="wrap-description">
-              <h3 class="services-item-title">Ruční mytí</h3>
-              <a href="./hand-wash.html">
-                <button class="services-btn">
-                  Více o službě
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../images/img/services-img/services-car-2.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="../images/img/services-img/services-car-mob-2.jpg"
-              />
-              <img src="../images/img/services-img/services-car-2.jpg" alt="Služba 2" />
-            </picture>
-            <div class="wrap-description">
-              <h3 class="services-item-title">Čištění interiéru</h3>
-              <a href="./dry-cleaning.html">
-                <button class="services-btn">
-                  Více o službě
-                  <div class="icon-btn-next"></div></button
-              ></a>
-            </div>
-          </li>
-          <li class="services-item">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../images/img/services-img/services-car-3.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="../images/img/services-img/services-car-mob-3.jpg"
-              />
-              <img src="../images/img/services-img/services-car-3.jpg" alt="Služba 3" />
-            </picture>
-            <div class="wrap-description">
-              <h3 class="services-item-title">Tvrdý vosk</h3>
-              <a href="./hard-wax.html">
-                <button class="services-btn">
-                  Více o službě
-                  <div class="icon-btn-next"></div></button
-              ></a>
-            </div>
-          </li>
-          <li class="services-item">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../images/img/services-img/services-car-4.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="../images/img/services-img/services-car-mob-4.jpg"
-              />
-              <img src="../images/img/services-img/services-car-4.jpg" alt="Služba 4" />
-            </picture>
-            <div class="wrap-description">
-              <h3 class="services-item-title">Leštění auta</h3>
-              <a href="./polishing.html">
-                <button class="services-btn">
-                  Více o službě
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../images/img/services-img/services-car-5.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="../images/img/services-img/services-car-mob-5.jpg"
-              />
-              <img src="../images/img/services-img/services-car-5.jpg" alt="Služba 5" />
-            </picture>
-            <div class="wrap-description">
-              <h3 class="services-item-title">Keramická ochrana vozu</h3>
-              <a href="./ceramic-coating.html">
-                <button class="services-btn">
-                  Více o službě
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../images/img/services-img/services-car-6.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="../images/img/services-img/services-car-mob-6.jpg"
-              />
-              <img src="../images/img/services-img/services-car-6.jpg" alt="Služba 6" />
-            </picture>
-            <div class="wrap-description">
-              <h3 class="services-item-title">Restaurování disků</h3>
-              <a href="./disk-restoration.html">
-                <button class="services-btn">
-                  Více o službě
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../images/img/services-img/services-car-7.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="../images/img/services-img/services-car-mob-7.jpg"
-              />
-              <img src="../images/img/services-img/services-car-7.jpg" alt="Služba 7" />
-            </picture>
-            <div class="wrap-description">
-              <h3 class="services-item-title">Tónování oken</h3>
-              <a href="./window-tinting.html">
-                <button class="services-btn">
-                  Více o službě
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="services-item">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../images/img/services-img/services-car-8.jpg"
-              />
-              <source
-                media="(max-width: 1024px)"
-                srcset="../images/img/services-img/services-car-mob-8.jpg"
-              />
-              <img src="../images/img/services-img/services-car-8.jpg" alt="Služba 8" />
-            </picture>
-            <div class="wrap-description">
-              <h3 class="services-item-title">Tónování světel</h3>
-              <a href="./headlight-tinting.html">
-                <button class="services-btn">
-                  Více o službě
-                  <div class="icon-btn-next"></div>
-                </button>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <section id="services" class="services">
+        <div class="services-container">
+          <h2 class="services-title">Naše služby</h2>
+          <ul class="service-list">
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-1.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-1.jpg"
+                />
+                <img src="../images/img/services-img/services-car-1.jpg" alt="Služba 1" />
+              </picture>
+              <div class="wrap-description">
+                <h3 class="services-item-title">Ruční mytí</h3>
+                <a href="./hand-wash.html">
+                  <button class="services-btn">
+                    Více o službě
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-2.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-2.jpg"
+                />
+                <img src="../images/img/services-img/services-car-2.jpg" alt="Služba 2" />
+              </picture>
+              <div class="wrap-description">
+                <h3 class="services-item-title">Čištění interiéru</h3>
+                <a href="./dry-cleaning.html">
+                  <button class="services-btn">
+                    Více o službě
+                    <div class="icon-btn-next"></div></button
+                ></a>
+              </div>
+            </li>
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-3.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-3.jpg"
+                />
+                <img src="../images/img/services-img/services-car-3.jpg" alt="Služba 3" />
+              </picture>
+              <div class="wrap-description">
+                <h3 class="services-item-title">Tvrdý vosk</h3>
+                <a href="./hard-wax.html">
+                  <button class="services-btn">
+                    Více o službě
+                    <div class="icon-btn-next"></div></button
+                ></a>
+              </div>
+            </li>
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-4.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-4.jpg"
+                />
+                <img src="../images/img/services-img/services-car-4.jpg" alt="Služba 4" />
+              </picture>
+              <div class="wrap-description">
+                <h3 class="services-item-title">Leštění auta</h3>
+                <a href="./polishing.html">
+                  <button class="services-btn">
+                    Více o službě
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-5.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-5.jpg"
+                />
+                <img src="../images/img/services-img/services-car-5.jpg" alt="Služba 5" />
+              </picture>
+              <div class="wrap-description">
+                <h3 class="services-item-title">Keramická ochrana vozu</h3>
+                <a href="./ceramic-coating.html">
+                  <button class="services-btn">
+                    Více o službě
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-6.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-6.jpg"
+                />
+                <img src="../images/img/services-img/services-car-6.jpg" alt="Služba 6" />
+              </picture>
+              <div class="wrap-description">
+                <h3 class="services-item-title">Restaurování disků</h3>
+                <a href="./disk-restoration.html">
+                  <button class="services-btn">
+                    Více o službě
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-7.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-7.jpg"
+                />
+                <img src="../images/img/services-img/services-car-7.jpg" alt="Služba 7" />
+              </picture>
+              <div class="wrap-description">
+                <h3 class="services-item-title">Tónování oken</h3>
+                <a href="./window-tinting.html">
+                  <button class="services-btn">
+                    Více o službě
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+            <li class="services-item">
+              <picture>
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-8.jpg"
+                />
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="../images/img/services-img/services-car-mob-8.jpg"
+                />
+                <img src="../images/img/services-img/services-car-8.jpg" alt="Služba 8" />
+              </picture>
+              <div class="wrap-description">
+                <h3 class="services-item-title">Tónování světel</h3>
+                <a href="./headlight-tinting.html">
+                  <button class="services-btn">
+                    Více o službě
+                    <div class="icon-btn-next"></div>
+                  </button>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
     <section id="examples-of-work" class="examples">
       <div class="examples-container">
@@ -432,42 +439,156 @@
               href="https://www.instagram.com/vip.car_detailing/"
               target="_blank"
               >SLEDUJTE NÁS</a
-            >
-          </div>
-        </div>
-        <div class="examples-list">
-          <img class="tall" src="../images/img/examples/our-work-car-1.png" alt="Příklad práce 1" />
-          <img src="../images/img/examples/our-work-car-2.png" alt="Příklad práce 2" />
-          <img src="../images/img/examples/our-work-car-3.png" alt="Příklad práce 3" />
-          <img src="../images/img/examples/our-work-car-4.png" alt="Příklad práce 4" />
-          <img src="../images/img/examples/our-work-car-5.png" alt="Příklad práce 5" />
-          <img src="../images/img/examples/our-work-car-6.png" alt="Příklad práce 6" />
-          <div class="examples-box-inst">
-            <div class="examples-box-inst_header">
-              <h3 class="examples-box-ins_title">JSME NA INSTAGRAMU</h3>
-              <p class="examples-box-ins_desctiption">@vip.car_detailing</p>
+              >
             </div>
-            <a
-              class="examples-box-inst_btn"
-              href="https://www.instagram.com/vip.car_detailing/"
-              target="_blank"
-              >SLEDUJTE NÁS</a
-            >
+          </div>
+          <div class="examples-list">
+            <img
+              class="tall"
+              src="../images/img/examples/our-work-car-1.png"
+              alt="Příklad práce 1"
+            />
+            <img
+              class="example-photo"
+              src="../images/img/examples/our-work-car-2.png"
+              alt="Příklad práce 2"
+            />
+            <img
+              class="example-photo"
+              src="../images/img/examples/our-work-car-3.png"
+              alt="Příklad práce 3"
+            />
+            <img
+              class="example-photo"
+              src="../images/img/examples/our-work-car-4.png"
+              alt="Příklad práce 4"
+            />
+            <img
+              class="example-photo"
+              src="../images/img/examples/our-work-car-5.png"
+              alt="Příklad práce 5"
+            />
+            <img
+              class="example-photo"
+              src="../images/img/examples/our-work-car-6.png"
+              alt="Příklad práce 6"
+            />
+            <div class="examples-box-inst example-photo">
+              <div class="examples-box-inst_header">
+                <h3 class="examples-box-ins_title">JSME NA INSTAGRAMU</h3>
+                <p class="examples-box-ins_desctiption">@vip.car_detailing</p>
+              </div>
+              <a
+                class="examples-box-inst_btn"
+                href="https://www.instagram.com/vip.car_detailing/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i> SLEDUJTE NÁS</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- contact -->
-    <%= require('html-loader!./partials/contact.html').default %>
+      <!-- contact -->
+      <%= require('html-loader!./partials/contact.html').default %>
 
-    <!-- footer -->
-    <%= require('html-loader!./partials/footer.html').default %>
+      <section class="reviews-section" id="reviews">
+        <div class="reviews-container">
+          <swiper-container
+            class="reviews-swiper"
+            navigation="true"
+            pagination="true"
+            pagination-clickable="true"
+            space-between="20"
+            slides-per-view="3"
+            autoplay-delay="3500"
+            autoplay-disable-on-interaction="false"
+          >
+            <swiper-slide>
+              <div class="swiper-slide review">
+                <div class="reviewer">
+                  <!-- <img src="path/to/reviewer1.jpg" alt="Фото відгукувача" /> -->
+                  <h3 class="reviewer-name">Jan Novák</h3>
+                </div>
+                <div class="review-content">
+                  <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                  <p class="review-body">
+                    Fantastická služba! Moje auto vypadá jako nové po detailingu. Určitě doporučuji
+                    všem!
+                  </p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-slide review">
+                <div class="reviewer">
+                  <!-- <img src="path/to/reviewer2.jpg" alt="Фото відгукувача" /> -->
+                  <h3 class="reviewer-name">Petra Dvořáková</h3>
+                </div>
+                <div class="review-content">
+                  <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                  <p class="review-body">
+                    Velmi profesionální přístup a skvělý výsledek. Auto je po leštění jako z
+                    továrny.
+                  </p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-slide review">
+                <div class="reviewer">
+                  <!-- <img src="path/to/reviewer2.jpg" alt="Фото відгукувача" /> -->
+                  <h3 class="reviewer-name">Martin Šimek</h3>
+                </div>
+                <div class="review-content">
+                  <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                  <p class="review-body">
+                    Jsem nadmíru spokojený. Vynikající kvalita práce a příjemný personál.
+                  </p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-slide review">
+                <div class="reviewer">
+                  <!-- <img src="path/to/reviewer2.jpg" alt="Фото відгукувача" /> -->
+                  <h3 class="reviewer-name">Eva Králová</h3>
+                </div>
+                <div class="review-content">
+                  <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                  <p class="review-body">
+                    Skvělé služby za přijatelnou cenu. Moje auto je po keramickém povlaku naprosto
+                    dokonalé.
+                  </p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="swiper-slide review">
+                <div class="reviewer">
+                  <!-- <img src="path/to/reviewer2.jpg" alt="Фото відгукувача" /> -->
+                  <h3 class="reviewer-name">Tomáš Svoboda</h3>
+                </div>
+                <div class="review-content">
+                  <div class="review-rating">⭐⭐⭐⭐☆</div>
+                  <p class="review-body">
+                    Auto vypadá skvěle, jen čas dodání mohl být rychlejší. Jinak výsledek je
+                    dokonalý.
+                  </p>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </section>
 
-    <!-- burger -->
-    <%= require('html-loader!./partials/burger.html').default %>
+      <!-- footer -->
+      <%= require('html-loader!./partials/footer.html').default %>
 
-    <script src="../bundle.js"></script>
+      <!-- burger -->
+      <%= require('html-loader!./partials/burger.html').default %>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="../bundle.js"></script>
   </body>
 </html>
