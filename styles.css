@@ -357,7 +357,7 @@ summary {
   }
 }
 
-.btn-back-all-services, .form-btn, .services-btn, .services-item {
+.box-burger-menu, .btn-back-all-services, .form-btn, .services-btn, .services-item {
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -443,7 +443,6 @@ body .ellipse-6 {
   height: 419px;
   flex-shrink: 0;
   border-radius: 419px;
-  opacity: var(--sds-size-stroke-border);
   border-radius: 419px;
   background: linear-gradient(74deg, rgba(167, 123, 84, 0.2) 54.36%, rgba(0, 0, 0, 0.2) 88.58%);
   filter: blur(80px);
@@ -475,6 +474,10 @@ body .smoke-2 {
   body .smoke-2 {
     width: 1440px;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .header__container {
@@ -2463,7 +2466,7 @@ swiper-container::part(bullet-active) {
 .box-burger-menu {
   display: flex;
   width: 390px;
-  height: 520px;
+  height: 100vh;
   background-color: #000000;
   margin: 0 auto;
   position: relative;
@@ -2474,6 +2477,7 @@ swiper-container::part(bullet-active) {
   position: fixed;
   top: 0;
   z-index: 1;
+  transform: translateX(0%);
 }
 
 .site-nav-burger-menu {
@@ -2540,5 +2544,6 @@ swiper-container::part(bullet-active) {
 }
 
 .is-hidden {
-  display: none;
+  opacity: 0;
+  transform: translateX(-100%);
 }

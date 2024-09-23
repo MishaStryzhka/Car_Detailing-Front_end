@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \*******************************/
 /***/ (() => {
 
-eval("(function () {\n  var refs = {\n    openMenuBtn: document.querySelector('[data-menu-open]'),\n    closeMenuBtn: document.querySelector('[data-menu-close]'),\n    menu: document.querySelector('[data-menu]')\n    // body: document.querySelector('body'),\n  };\n  refs.openMenuBtn.addEventListener('click', toggleMenu);\n  refs.closeMenuBtn.addEventListener('click', toggleMenu);\n  function toggleMenu() {\n    refs.menu.classList.toggle('is-hidden');\n    // refs.body.classList.toggle('no-scroll');\n  }\n})();\n\n//# sourceURL=webpack://car_detailing-front_end/./src/js/burger-menu.js?");
+eval("(function () {\n  var refs = {\n    openMenuBtn: document.querySelector('[data-menu-open]'),\n    closeMenuBtn: document.querySelector('[data-menu-close]'),\n    menu: document.querySelector('[data-menu]'),\n    body: document.querySelector('body'),\n    listlink: document.querySelector('.site-nav-burger-menu')\n  };\n  refs.openMenuBtn.addEventListener('click', toggleMenu);\n  refs.closeMenuBtn.addEventListener('click', toggleMenu);\n  refs.listlink.addEventListener('click', toggleMenu);\n  function toggleMenu() {\n    refs.menu.classList.toggle('is-hidden');\n    refs.body.classList.toggle('no-scroll');\n  }\n})();\n\n//# sourceURL=webpack://car_detailing-front_end/./src/js/burger-menu.js?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("(function () {\n  var refs = {\n    openMenuBtn: document.querySelector('[
   \**************************************/
 /***/ (() => {
 
-eval("// swiper element\nvar swiperEl = document.querySelector('[data-swiper-second]');\n\n// swiper parameters\nvar swiperParams = {\n  slidesPerView: 1,\n  breakpoints: {\n    390: {\n      slidesPerView: 1.3\n    },\n    1024: {\n      slidesPerView: 2.3\n    },\n    1440: {\n      slidesPerView: 3\n    }\n  }\n};\n\n// now we need to assign all parameters to Swiper element\nObject.assign(swiperEl, swiperParams);\n\n// and now initialize it\nswiperEl.initialize();\n\n//# sourceURL=webpack://car_detailing-front_end/./src/js/set-slide-per-view.js?");
+eval("// swiper element\nvar swiperEl = document.querySelector('[data-swiper-second]');\nif (swiperEl) {\n  // swiper parameters\n  var swiperParams = {\n    slidesPerView: 1,\n    breakpoints: {\n      390: {\n        slidesPerView: 1.3\n      },\n      1024: {\n        slidesPerView: 2.3\n      },\n      1440: {\n        slidesPerView: 3\n      }\n    }\n  };\n\n  // now we need to assign all parameters to Swiper element\n  Object.assign(swiperEl, swiperParams);\n\n  // and now initialize it\n  swiperEl.initialize();\n}\n\n//# sourceURL=webpack://car_detailing-front_end/./src/js/set-slide-per-view.js?");
 
 /***/ }),
 
