@@ -13,6 +13,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  overflow: hidden;
 
   @extend %transition-default;
 
@@ -119,6 +120,12 @@
     cursor: pointer;
     width: 56px;
   }
+
+  &[data-language-toggle='desktop'] {
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+  }
 }
 .languages-icon {
   @extend %icon;
@@ -128,24 +135,37 @@
 .icon-arrow {
   @extend %icon;
   background-image: url('../images/icons/icon-arrow.svg');
-  transform: rotate(0deg);
+  transform: rotate(270deg);
   @extend %transition-default;
+
+  @media screen and (min-width: $desktop) {
+    transform: rotate(0deg);
+  }
 }
 
 .rotate {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
+  @media screen and (min-width: $desktop) {
+    transform: rotate(180deg);
+  }
 }
 
 .language-list {
   @include list;
+  position: absolute;
+  left: -25px;
   padding: 8px 16px;
+  background-color: #111314;
 
-  transform: translateY(-10%);
+  transform: translateX(0%);
   @extend %transition-default;
   @media screen and (min-width: $desktop) {
+    transform-origin: top;
+    transform: translateY(0%);
     position: absolute;
-    top: 50px;
-    z-index: 200;
+    left: 0;
+    top: 100%;
+    z-index: 1;
   }
   & a {
     text-decoration: none;
@@ -154,6 +174,22 @@
     align-items: center;
     gap: 8px;
   }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  @extend %transition-default;
+  transform: translateX(-100%);
+
+  @media screen and (min-width: $desktop) {
+    transform-origin: top;
+    transform: translateY(-100%);
+  }
+}
+
+[data-language-toggle='desktop'] {
 }
 
 .icon-language-ua {
@@ -184,14 +220,6 @@
   @media screen and (min-width: $mobile) {
     font-size: 16px;
   }
-}
-
-.hidden {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  @extend %transition-default;
-  transform: translateY(-100%);
 }
 
 .wrap-languages-menu {
