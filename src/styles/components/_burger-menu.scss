@@ -85,3 +85,119 @@
   opacity: 0;
   transform: translateX(-100%);
 }
+
+// LANGUAGES
+%icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+
+.language-menu {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 56px;
+    margin-left: auto;
+    z-index: 100;
+  }
+}
+.language-toggle-btn {
+  background-color: transparent;
+  padding: 8px 0;
+  display: flex;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  @media screen and (min-width: $desktop) {
+    cursor: pointer;
+    width: 56px;
+  }
+}
+.languages-icon {
+  @extend %icon;
+  background-image: url('../images/icons/icon-world.svg');
+}
+
+.icon-arrow {
+  @extend %icon;
+  background-image: url('../images/icons/icon-arrow.svg');
+  transform: rotate(0deg);
+  @extend %transition-default;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.language-list {
+  @include list;
+  padding: 8px 16px;
+
+  transform: translateY(-10%);
+  @extend %transition-default;
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 50px;
+    z-index: 200;
+  }
+  & a {
+    text-decoration: none;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.icon-language-ua {
+  @extend %icon;
+  margin: 0;
+  background-image: url('../images/icons/icon-uk.svg');
+}
+.icon-language-cs {
+  @extend %icon;
+  margin: 0;
+  background-image: url('../images/icons/icon-cs.svg');
+}
+.icon-language-en {
+  @extend %icon;
+  margin: 0;
+  background-image: url('../images/icons/icon-en.svg');
+}
+
+.language-text {
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.1vw;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  @extend %transition-default;
+  transform: translateY(-100%);
+}
+
+.wrap-languages-menu {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-left: auto;
+  }
+}
