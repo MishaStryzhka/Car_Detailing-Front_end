@@ -13,6 +13,7 @@
   position: fixed;
   top: 0;
   z-index: 1;
+  overflow: hidden;
 
   @extend %transition-default;
 
@@ -87,4 +88,147 @@
   opacity: 0;
   transform: translateX(-100%);
   visibility: hidden;
+}
+
+// LANGUAGES
+%icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+
+.language-menu {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 56px;
+    margin-left: auto;
+    z-index: 100;
+  }
+}
+.language-toggle-btn {
+  background-color: transparent;
+  padding: 8px 0;
+  display: flex;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  @media screen and (min-width: $desktop) {
+    cursor: pointer;
+    width: 56px;
+  }
+
+  &[data-language-toggle='desktop'] {
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
+  }
+}
+.languages-icon {
+  @extend %icon;
+  background-image: url('../images/icons/icon-world.svg');
+}
+
+.icon-arrow {
+  @extend %icon;
+  background-image: url('../images/icons/icon-arrow.svg');
+  transform: rotate(270deg);
+  @extend %transition-default;
+
+  @media screen and (min-width: $desktop) {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate {
+  transform: rotate(90deg);
+  @media screen and (min-width: $desktop) {
+    transform: rotate(180deg);
+  }
+}
+
+.language-list {
+  @include list;
+  position: absolute;
+  left: -25px;
+  padding: 8px 16px;
+  background-color: #111314;
+
+  transform: translateX(0%);
+  @extend %transition-default;
+  @media screen and (min-width: $desktop) {
+    transform-origin: top;
+    transform: translateY(0%);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+  }
+  & a {
+    text-decoration: none;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+
+  @extend %transition-default;
+  transform: translateX(-100%);
+
+  @media screen and (min-width: $desktop) {
+    transform-origin: top;
+    transform: translateY(-100%);
+  }
+}
+
+[data-language-toggle='desktop'] {
+}
+
+.icon-language-ua {
+  @extend %icon;
+  margin: 0;
+  background-image: url('../images/icons/icon-uk.svg');
+}
+.icon-language-cs {
+  @extend %icon;
+  margin: 0;
+  background-image: url('../images/icons/icon-cs.svg');
+}
+.icon-language-en {
+  @extend %icon;
+  margin: 0;
+  background-image: url('../images/icons/icon-en.svg');
+}
+
+.language-text {
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4.1vw;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: $secondary-white-color;
+  @media screen and (min-width: $mobile) {
+    font-size: 16px;
+  }
+}
+
+.wrap-languages-menu {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    margin-left: auto;
+  }
 }

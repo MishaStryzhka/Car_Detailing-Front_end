@@ -1,5 +1,6 @@
 .header__container {
   position: relative;
+  z-index: 2;
   @extend %container;
   @extend %flex-center;
   // display: flex;

@@ -2,6 +2,9 @@
   @extend %flex-center;
 
   gap: 16px;
+  padding: 16px 0;
+  background-color: #000;
+  z-index: 2;
 }
 
 .contact-link {

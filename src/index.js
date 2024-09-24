@@ -5,3 +5,4 @@ import './styles/main.scss';
 import './js/set-slide-per-view';
 
 import './js/setParamsReviewsSwiper';
+import './js/setOpenLanguageList';
