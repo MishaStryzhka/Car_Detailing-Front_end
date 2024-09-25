@@ -7,7 +7,7 @@ if (swiperEl) {
     slidesPerView: 1,
     breakpoints: {
       390: {
-        slidesPerView: 1.3,
+        slidesPerView: 1.1,
       },
       1024: {
         slidesPerView: 2.3,
