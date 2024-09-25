@@ -2350,7 +2350,7 @@ body .smoke-2 {
   }
 }
 
-.icon-language-en, .icon-language-cs, .icon-language-ua, .icon-arrow, .languages-icon, .icon-protection, .icon-time, .icon-scratch, .icon-flask, .icon-uv, .icon-water, .icon-stars, .icon-design, .icon-save-more {
+.icon-language-en, .icon-language-cs, .icon-language-uk, .icon-arrow, .languages-icon, .icon-protection, .icon-time, .icon-scratch, .icon-flask, .icon-uv, .icon-water, .icon-stars, .icon-design, .icon-save-more {
   display: block;
   height: 60px;
   width: 60px;
@@ -2586,7 +2586,7 @@ swiper-container::part(bullet-active) {
   visibility: hidden;
 }
 
-.icon-language-en, .icon-language-cs, .icon-language-ua, .icon-arrow, .languages-icon, .icon-save-more, .icon-design, .icon-stars, .icon-water, .icon-uv, .icon-flask, .icon-scratch, .icon-time, .icon-protection {
+.icon-language-en, .icon-language-cs, .icon-language-uk, .icon-arrow, .languages-icon, .icon-save-more, .icon-design, .icon-stars, .icon-water, .icon-uv, .icon-flask, .icon-scratch, .icon-time, .icon-protection {
   display: block;
   width: 24px;
   height: 24px;
@@ -2693,7 +2693,7 @@ swiper-container::part(bullet-active) {
   }
 }
 
-.icon-language-ua {
+.icon-language-uk {
   margin: 0;
   background-image: url(0d7c310b0bc78bd25433.svg);
 }
