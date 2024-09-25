@@ -1439,11 +1439,21 @@ body .smoke-2 {
 }
 
 .contact-wrap {
-  width: 350px;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 58px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 390px) {
+  .contact-wrap {
+    padding: 20px 10px 58px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .contact-wrap {
+    width: 350px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .contact-wrap {
@@ -2424,7 +2434,12 @@ body .smoke-2 {
 }
 .price-box img {
   display: block;
-  width: 440px;
+  width: 100%;
+}
+@media screen and (min-width: 390px) {
+  .price-box img {
+    width: 440px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .price-box img {
