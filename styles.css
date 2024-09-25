@@ -2414,6 +2414,7 @@ body .smoke-2 {
   padding-top: 80px;
   background: url(563cba6994375749775c.png), no-repeat;
   background-size: 1440px 7334px;
+  overflow: hidden;
 }
 
 .price-box {
@@ -2421,8 +2422,19 @@ body .smoke-2 {
   align-items: center;
   justify-content: center;
 }
-.price-boximg {
+.price-box img {
   display: block;
+  width: 440px;
+}
+@media screen and (min-width: 1024px) {
+  .price-box img {
+    width: 903px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .price-box img {
+    width: 950px;
+  }
 }
 
 swiper-container {
