@@ -249,6 +249,9 @@ module.exports = {
         },
       ],
     }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: path.resolve(__dirname, 'src/sitemap.xml'), to: '' }],
+    }),
     new MiniCssExtractPlugin({
       filename: 'styles.css', // це файл, який міститиме всі стилі\
     }),
