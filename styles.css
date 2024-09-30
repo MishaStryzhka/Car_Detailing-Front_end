@@ -1975,18 +1975,6 @@ body .smoke-2 {
   }
 }
 
-.img-work-example {
-  display: block;
-  width: 300px;
-  height: 400px;
-}
-@media screen and (min-width: 1024px) {
-  .img-work-example {
-    width: 100%;
-    height: 500px;
-  }
-}
-
 .footer .footer-container {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -2467,14 +2455,19 @@ swiper-slide {
 
 swiper-slide img {
   display: block;
-  width: 300px;
+  width: 316.364px;
   height: 400px;
   object-fit: cover;
+}
+@media screen and (max-width: 390px) {
+  swiper-slide img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 1024px) {
   swiper-slide img {
     width: 100%;
-    height: 100%;
+    height: 500px;
   }
 }
 
@@ -2487,6 +2480,12 @@ swiper-container::part(button-next) {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5019607843);
   color: goldenrod;
+}
+@media screen and (max-width: 1023px) {
+  swiper-container::part(button-prev),
+  swiper-container::part(button-next) {
+    display: none;
+  }
 }
 
 swiper-container::part(bullet) {
