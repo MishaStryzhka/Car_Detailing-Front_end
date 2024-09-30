@@ -1,11 +1,16 @@
 // swiper element
 const swiperEl = document.querySelector('[data-swiper-second]');
 
+console.log('swiperEl', swiperEl);
+
 if (swiperEl) {
   // swiper parameters
   const swiperParams = {
     slidesPerView: 1,
     breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
       390: {
         slidesPerView: 1.1,
       },
